@@ -422,10 +422,11 @@ table of contents
 .travel__prototype-section {
   display: flex;
   justify-content: space-between;
-}
+} 
 
-.travel__prototype-section div {
+.travel__prototype-section img {
   max-width: 420px;
+  width: 100%;
 }
 
 .travel__prototype-section p {
@@ -433,23 +434,7 @@ table of contents
   font-weight: 700;
   text-align: center;
   margin-bottom: 32px;
-}
-
-.travel__prototype-section img {
-  width: 100%;
-}
-
-/* because the gif doesn't have shades */
-.travel__prototype-section .travel-gif {
-  max-width: 400px;
-}
-
-.travel__prototype-section div:nth-child(1) {
-  margin-top: -110px;
-}
-
-.travel__prototype-section:first-of-type div:nth-child(1)  {
-  margin-top: 0;
+  max-width: 420px;
 }
 
 .travel__prototype-section div:nth-child(2) {
@@ -902,5 +887,35 @@ table of contents
   .travel__visualdesign p {
     font-size: 1rem;
     margin-bottom: 60px;
+  }
+
+  /********** 7.8. prototypes **********/
+
+  .travel__prototype {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .travel__prototype h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .travel__prototype-section p {
+    font-size: 1rem;
+  }
+
+  /********** 7.9. what I learned **********/
+
+  .travel__learned {
+    margin: 80px auto;
+  }
+
+  .travel__learned h2 {
+    font-size: 2.5rem;
+  }
+
+  .travel__learned p {
+    font-size: 1rem;
   }
 }
