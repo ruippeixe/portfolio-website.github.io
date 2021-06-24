@@ -1,0 +1,906 @@
+/********************
+table of contents 
+
+7. travel case study
+  7.1. presentation
+  7.2. research
+  7.3. personas
+  7.4. user journey map
+  7.5. information architecture
+  7.6. wireframes
+  7.7. visual design
+  7.8. prototypes
+  7.9. what I learned
+  7.10. media queries
+    7.10.1. global
+
+*********************/
+
+/********************
+  7. travel case study
+*********************/
+
+.main-travel {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FAFAF5;
+}
+
+.travel-bg-wrap-1 {
+  background: linear-gradient(90deg, 
+            rgba(138,164,147,1) 0%, 
+            rgba(168,189,211,1) 50%, 
+            rgba(241,218,171,1) 100%);
+}
+
+.travel-bg-wrap-2 {
+  background: #FAFAF5;
+}
+
+.check-more-btn.travel {
+  color: #1B1B1B;
+  background: linear-gradient(90deg, 
+            rgba(138,164,147,1) 0%, 
+            rgba(168,189,211,1) 50%, 
+            rgba(241,218,171,1) 100%);
+}
+
+/********** 7.1. presentation **********/
+
+.travel__presentation {
+  padding-top: 80px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.travel__presentation h1 {
+  margin: 0 0 24px;
+  font-size: 5.5rem;
+  color: #FAFAF5;
+}
+
+.travel__presentation h2 {
+  font-size: 2rem;
+  color: #1B1B1B;
+  margin-bottom: 144px;
+}
+
+.travel__presentation img {
+  display: flex;
+  max-width: 870px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 144px;
+}
+
+/********** 7.2. research **********/
+
+.travel__research {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.travel__research > * {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__research-problems,
+.travel__research-goals {
+  padding: 48px 56px;
+  text-align: center;
+  background-color: #FAFAF5;
+  border-radius: 16px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+  margin-bottom: 144px;
+  max-height: 350px;
+}
+
+.travel__research-goals {
+  margin-top: 175px;
+}
+
+.travel__research-problems h3,
+.travel__research-goals h3 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.travel__research-problems p,
+.travel__research-goals p {
+  font-size: 1.375rem;
+  line-height: 46px;
+}
+
+/********** 7.3. personas **********/
+
+.travel__persona {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 144px;
+}
+
+.travel__persona h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #FAFAF5;
+  margin-bottom: 24px;
+}
+
+.travel__persona > div:nth-child(1) {
+  max-width: 600px;
+  font-size: 1.375rem;
+  margin-bottom: 80px;
+}
+
+.travel__persona > div:nth-child(1) p {
+  line-height: 140%;
+}
+
+.travel__persona-card-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__persona-card {
+  max-width: 500px;
+  background-color: #FAFAF5;
+  border-radius: 16px;
+}
+
+.travel__persona-card:nth-of-type(1){
+  max-height: 808px;
+}
+
+.travel__persona-card:nth-of-type(2){
+  max-height: 848px;
+  margin-top: 248px;
+}
+
+.travel__persona-card h3,
+.travel__persona-card h4,
+.travel__persona-card p {
+  font-size: 1.375rem;
+}
+
+.travel__persona-personal {
+  display: flex;
+  align-items: center;
+  padding: 28px;
+}
+
+.travel__persona-personal img {
+  width: 151px;
+}
+
+.travel__persona-personal div:nth-child(2) {
+  margin-left: 36px;
+}
+
+.travel__persona-personal div:nth-child(2) p {
+  margin-bottom: 11px;
+}
+
+.travel__persona-personal div:nth-child(2) span {
+  font-weight: 700;
+}
+
+.travel__persona-description {
+  padding: 0 28px 28px 28px;
+}
+
+.travel__persona-description h3 {
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+.travel__persona-description h4 {
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.travel__persona-description div:nth-of-type(2) p {
+  margin-bottom: 22px;
+}
+
+.travel__persona-description div:nth-of-type(3) p {
+  margin-bottom: 11px;
+}
+
+/********** 7.4. user journey map **********/
+
+.travel__journey {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 144px;
+}
+
+.travel__journey h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #FAFAF5;
+  margin-bottom: 80px;
+}
+
+.travel__journey-wrap {
+  padding: 72px;
+  background-color: #FAFAF5;;
+  border-radius: 16px;
+}
+
+.travel__journey-description {
+  display: flex;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.travel__journey-description h3 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.travel__journey-description p {
+  font-size: 1.375rem;
+  max-width: 476px;
+  line-height: 150%;
+}
+
+.travel__journey-description span {
+  font-weight: 700;
+}
+
+.travel__journey-description img {
+  width: 151px;
+  margin-right: 40px;
+}
+
+.travel__journey-description div:nth-of-type(2) {
+  margin-right: 64px;
+}
+
+.travel__journey-description::after {
+  content: '';
+  position: absolute;
+  background-color: #1B1B1B;
+  top: 216px;
+  width: 100%;
+  height: 1px;
+}
+
+.travel__journey-phase {
+  display: flex;
+}
+
+.travel__journey-phase div {
+  max-width: 227px;
+  margin-right: 60px;
+}
+
+.travel__journey-phase div:last-child {
+  margin-right: 0;
+}
+
+.travel__journey-phase h4 {
+  display: flex;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 32px 0 24px;
+}
+
+.travel__journey-phase p {
+  display: flex;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.travel__journey-phase span {
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.travel__journey-wrap div:last-of-type img {
+  width: 100%;
+}
+
+/********** 7.5. information architecture **********/
+
+.travel__ia {
+  max-width: 1200px;
+  margin: 144px auto;
+}
+
+.travel__ia h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #1B1B1B;
+  margin-bottom: 24px;
+}
+
+.travel__ia h3 {
+  font-size: 2.25rem;
+  color: #1B1B1B;
+  margin-bottom: 24px;
+}
+
+.travel__ia p {
+  max-width: 600px;
+  font-size: 1.375rem;
+  margin-bottom: 80px;
+  line-height: 140%;
+}
+
+.travel__ia p:nth-of-type(2) {
+  margin-bottom: 24px;
+}
+
+.travel__ia img {
+  width: 100%;
+}
+
+.travel__ia img:nth-of-type(1) {
+  margin-bottom: 80px;
+}
+
+/********** 7.6. wireframes **********/
+
+.travel__wireframes {
+  max-width: 1200px;
+  margin: 0 auto 144px;
+}
+
+.travel__wireframes h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #1B1B1B;
+  margin-bottom: 24px;
+}
+
+.travel__wireframes p {
+  max-width: 600px;
+  font-size: 1.375rem;
+  margin-bottom: 80px;
+  line-height: 140%;
+}
+
+.travel__wireframes-wf {
+  text-align: center;
+}
+
+.travel__wireframes-wf img {
+  width: 100%;
+}
+
+.travel__wireframes-wf img:first-of-type {
+  max-width: 700px;
+  margin-bottom: 80px;
+}
+
+/********** 7.7. visual design **********/
+
+.travel__visualdesign {
+  max-width: 1200px;
+  margin: 0 auto 144px;
+}
+
+.travel__visualdesign h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #1B1B1B;
+  margin-bottom: 24px;
+}
+
+.travel__visualdesign p {
+  max-width: 600px;
+  font-size: 1.375rem;
+  margin-bottom: 80px;
+  line-height: 140%;
+}
+
+.travel__visualdesign div:nth-of-type(2) {
+  text-align: center;
+}
+
+.travel__visualdesign img {
+  max-width: 882px;
+  width: 100%;
+}
+
+/********** 7.8. prototypes **********/
+
+.travel__prototype {
+  max-width: 1200px;
+  margin: auto;
+  padding: 144px 0;
+}
+
+.travel__prototype h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #FAFAF5;
+  margin-bottom: 120px;
+}
+
+.travel__prototype-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__prototype-section div {
+  max-width: 420px;
+}
+
+.travel__prototype-section p {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.travel__prototype-section img {
+  width: 100%;
+}
+
+/* because the gif doesn't have shades */
+.travel__prototype-section .travel-gif {
+  max-width: 400px;
+}
+
+.travel__prototype-section div:nth-child(1) {
+  margin-top: -110px;
+}
+
+.travel__prototype-section:first-of-type div:nth-child(1)  {
+  margin-top: 0;
+}
+
+.travel__prototype-section div:nth-child(2) {
+  margin-top: 562px;
+}
+
+/********** 7.9. what I learned **********/
+
+.travel__learned {
+  max-width: 1200px;
+  margin: 144px auto;
+}
+
+.travel__learned h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #1B1B1B;
+  margin-bottom: 24px;
+}
+
+.travel__learned p {
+  max-width: 600px;
+  font-size: 1.375rem;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+/********************
+  7.10. media queries
+*********************/
+
+@media (max-width: 1366px) {
+
+  /********** 6.11.1. global **********/
+
+  .travel__presentation,
+  .travel__research,
+  .travel__persona,
+  .travel__journey,
+  .travel__ia,
+  .travel__wireframes,
+  .travel__visualdesign,
+  .travel__prototype,
+  .travel__learned {
+    max-width: 960px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  /********** 7.1. presentation **********/
+
+  .travel__presentation h1 {
+    font-size: 5rem;
+  }
+
+  .travel__presentation h2 {
+    font-size: 1.5rem;
+    margin-bottom: 112px;
+  }
+
+  .travel__presentation img {
+    padding-bottom: 112px;
+  }
+
+  /********** 7.2. research **********/
+
+  .travel__research-problems,
+  .travel__research-goals {
+    padding: 48px 40px;
+    margin-bottom: 112px;
+    max-height: 310px;
+    width: 350px;
+  }
+
+  .travel__research-problems h3,
+  .travel__research-goals h3 {
+    font-size: 2.5em;
+  }
+
+  .travel__research-problems p,
+  .travel__research-goals p {
+    font-size: 1.25rem;
+    line-height: 42px;
+  }
+
+  /********** 7.3. personas **********/
+
+  .travel__persona {
+    padding-bottom: 112px;
+  }
+
+  .travel__persona h2 {
+    font-size: 4rem;
+  }
+
+  .travel__persona > div:nth-child(1) {
+    font-size: 1.25rem;
+  }
+
+  .travel__persona-card-wrap {
+    flex-direction: column;
+  }
+
+  .travel__persona-card {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .travel__persona-card:nth-of-type(2){
+    margin-top: 80px;
+  }
+
+  .travel__persona-card h3,
+  .travel__persona-card h4,
+  .travel__persona-card p {
+    font-size: 1.25rem;
+  }
+
+  .travel__persona-description h4 {
+    margin-bottom: 16px;
+  }
+
+  .travel__persona-description div:nth-of-type(2) p {
+    margin-bottom: 18px;
+  }
+
+  /********** 7.4. user journey map **********/
+
+  .travel__journey {
+    padding-bottom: 112px;
+  }
+
+  .travel__journey h2 {
+    font-size: 4rem;
+  }
+
+  .travel__journey-wrap {
+    padding: 32px;
+  }
+
+  .travel__journey-description h3 {
+    font-size: 1.25rem;
+  }
+
+  .travel__journey-description p {
+    font-size: 1rem;
+    max-width: 280px;
+  }
+
+  .travel__journey-description img {
+    width: 100px;
+  }
+
+  .travel__journey-description::after {
+    top: 200px;
+  }
+
+  .travel__journey-phase h4 {
+    font-size: 1.25rem;
+  }
+  
+  .travel__journey-phase div {
+    margin-right: 40px;
+  }
+
+  .travel__journey-phase p {
+    font-size: 1rem;
+  }
+
+  /********** 7.5. information architecture **********/
+
+  .travel__ia {
+    margin: 112px auto;
+  }
+
+  .travel__ia h2 {
+    font-size: 4rem;
+  }
+
+  .travel__ia h3 {
+    font-size: 2rem;
+  }
+
+  .travel__ia p {
+    font-size: 1.25rem;
+  }
+
+  /********** 7.6. wireframes **********/
+
+  .travel__wireframes {
+    margin: 0 auto 112px;
+  }
+
+  .travel__wireframes h2 {
+    font-size: 4rem;
+  }
+
+  .travel__wireframes p {
+    font-size: 1.25rem;
+  }
+
+  /********** 7.7. visual design **********/
+  
+  .travel__visualdesign {
+    margin: 0 auto 112px;
+  }
+  
+  .travel__visualdesign h2 {
+    font-size: 4rem;
+  }
+
+  .travel__visualdesign p {
+    font-size: 1.25rem;
+  }
+
+  /********** 7.8. prototypes **********/
+  
+  .travel__prototype {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  
+  .travel__prototype h2 {
+    font-size: 4rem;
+  }
+
+  .travel__prototype-section div {
+    max-width: 320px;
+  }
+
+  .travel__prototype-section p {
+    font-size: 1.5rem;
+  }
+
+  .travel__prototype-section div:nth-child(2) {
+    margin-top: 462px;
+  }
+
+  /********** 7.9. what I learned **********/
+
+  .travel__learned {
+    margin: 112px auto;
+  }
+
+  .travel__learned h2 {
+    font-size: 4rem;
+  }
+
+  .travel__learned p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /********** 6.11.1. global **********/
+
+  .travel__presentation,
+  .travel__research,
+  .travel__persona,
+  .travel__journey,
+  .travel__ia,
+  .travel__wireframes,
+  .travel__visualdesign,
+  .travel__prototype,
+  .travel__learned {
+    max-width: 655px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  /********** 7.1. presentation **********/
+
+  .travel__presentation h1 {
+    font-size: 3rem;
+  }
+
+  .travel__presentation h2 {
+    font-size: 1.25rem;
+    margin-bottom: 60px;
+  }
+
+  .travel__presentation img {
+    padding-bottom: 80px;
+  }
+
+  /********** 7.2. research **********/
+
+  .travel__research > * {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .travel__research-problems,
+  .travel__research-goals {
+    padding: 32px 32px;
+    margin-bottom: 60px;
+    width: 280px;
+  }
+
+  .travel__research-goals {
+    margin-top: 0px;
+  }
+
+  .travel__research-problems h3,
+  .travel__research-goals h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .travel__research-problems p,
+  .travel__research-goals p {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+
+  /********** 7.3. personas **********/
+
+  .travel__persona {
+    padding-bottom: 80px;
+  }
+
+  .travel__persona h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  .travel__persona > div:nth-child(1) {
+    font-size: 1rem;
+  }
+
+  .travel__persona-card {
+    max-width: none;
+  }
+
+  .travel__persona-card:nth-of-type(2){
+    margin-top: 60px;
+  }
+
+  .travel__persona-card h3,
+  .travel__persona-card h4,
+  .travel__persona-card p {
+    font-size: 1rem;
+  }
+
+  .travel__persona-personal img {
+    width: 100px;
+  }
+
+  /********** 7.4. user journey map **********/
+
+  .travel__journey {
+    padding-bottom: 80px;
+  }
+
+  .travel__journey h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+  }
+
+  .travel__journey-wrap {
+    padding: 16px;
+  }
+
+  .travel__journey-description {
+    flex-direction: column;
+  }
+
+  .travel__journey-description h3 {
+    font-size: 1rem;
+    margin: 16px 0;
+  }
+  
+  .travel__journey-description div:nth-of-type(1) {
+    text-align: center;
+  }
+  
+  .travel__journey-description::after {
+    top: 400px;
+  }
+
+  .travel__journey-phase div {
+    margin-right: 16px;
+  }
+
+  .travel__journey-phase h4 {
+    font-size: 0.8rem;
+    margin: 8px 0 16px;
+  }
+
+  .travel__journey-phase p {
+    display: block;
+    font-size: 0.75rem;
+  }
+
+  /********** 7.5. information architecture **********/
+
+  .travel__ia {
+    margin: 80px auto;
+  }
+
+  .travel__ia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  .travel__ia h3 {
+    font-size: 1.5rem;
+  }
+
+  .travel__ia p {
+    font-size: 1rem;
+    margin-bottom: 60px;
+  }
+
+  .travel__ia div:nth-of-type(2) p:nth-of-type(1) {
+    margin-bottom: 24px;
+  }
+
+  /********** 7.6. wireframes **********/
+
+  .travel__wireframes {
+    margin: 0 auto 80px;
+  }
+
+  .travel__wireframes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  .travel__wireframes p {
+    font-size: 1rem;
+    margin-bottom: 60px;
+  }
+
+  .travel__wireframes-wf img:first-of-type {
+    margin-bottom: 60px;
+  }
+
+  /********** 7.7. visual design **********/
+
+  .travel__visualdesign {
+    margin: 0 auto 80px;
+  }
+
+  .travel__visualdesign h2 {
+    font-size: 2.5rem;
+  }
+
+  .travel__visualdesign p {
+    font-size: 1rem;
+    margin-bottom: 60px;
+  }
+}

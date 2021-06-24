@@ -1,0 +1,1016 @@
+/********************
+table of contents 
+
+6. fitness case study
+  6.1. presentation
+  6.2. research
+  6.3. persona
+    6.3.1. card
+  6.4. information architecture
+  6.5. low-fi wireframes
+  6.6. wireframes
+  6.7. design system
+  6.8. logo design
+  6.9. prototypes
+  6.10. learned
+  6.11. media queries
+    6.11.1. global
+
+*********************/
+
+/********************
+  6. fitness case study
+*********************/
+
+.main-fitness {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFCFC;
+}
+
+.check-more-btn.fitness {
+  color: #FFFCFC;
+  background-color: #F44336;
+}
+
+/********** 6.1. presentation **********/
+
+.fitness__presentation {
+  padding-top: 149px;
+  background-color: #F44336;
+}
+
+.fitness__presentation div:first-of-type {
+  margin-bottom: 96px;
+}
+
+.fitness__presentation div {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fitness__presentation div img {
+  width: 193px;
+  margin-right: 0;
+}
+
+.fitness__presentation h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  max-width: 500px;
+  color: #FFFCFC;
+}
+
+.fitness__presentation p {
+  font-size: 2.25rem;
+  max-width: 900px;
+  margin-bottom: 160px;
+}
+
+.fitness__presentation img {
+  display: flex;
+  margin: auto;
+  max-width: 960px;
+}
+
+.fitness__presentation > img {
+  padding-bottom: 160px;
+}
+
+/********** 6.2. research **********/
+
+.fitness__research {
+  background-color: #F44336;
+  border-radius: 0 0 240px;
+}
+
+.fitness__research > * {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fitness__research h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F44336;
+  height: 128px;
+  margin-bottom: 80px;
+  padding-left: 48px;
+  border-radius: 32px;
+  background-color: #FFFCFC;
+}
+
+.fitness__research > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 240px;
+}
+
+.fitness__problems,
+.fitness__goals {
+  width: 100%;
+  max-width: 560px;
+  padding: 80px;
+  border-radius: 48px;
+  background-color: #FFFCFC;
+}
+
+.fitness__problems h3,
+.fitness__goals h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.fitness__problems p,
+.fitness__goals p {
+  font-size: 1.5rem;
+  margin-bottom: 36px;
+  padding-left: 26px;
+  position: relative;
+}
+
+.fitness__problems p::before,
+.fitness__goals p::before {
+  content: url(../images/fitness/red-dot.png);
+  position: absolute;
+  top: -4px;
+  left: 1px;
+}
+
+/********** 6.3. persona **********/
+
+.fitness__persona {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fitness__persona img {
+  max-width: 321px;
+  border-radius: 20px;
+}
+
+.fitness__persona h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F44336;
+  height: 128px;
+  margin: 240px 0 32px;
+  padding-left: 48px;
+  border-radius: 32px;
+  background-color: #FFFCFC;
+  border: 8px solid #F44336;
+}
+
+.fitness__persona > p {
+  font-size: 1.75rem;
+  margin: 0 0 112px 26px;
+  position: relative;
+  line-height: 48px;
+}
+
+.fitness__persona p::before {
+  content: url(../images/fitness/red-dot.png);
+  position: absolute;
+  top: -6px;
+  left: -26px;
+}
+
+/********** 6.3.1. card **********/
+
+.fitness__persona-card {
+  background-color: #E5E1E1;
+  padding: 112px 124px;
+  margin-bottom: 112px;
+  border-radius: 80px;
+}
+
+.fitness__persona-card > div:first-child {
+  background-color: #FFFCFC;
+  font-size: 1.75rem;
+  padding: 40px;
+  margin-bottom: 24px;
+  border-radius: 32px;
+}
+
+.fitness__persona-card div:first-child p:first-of-type {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.fitness__persona-description {
+  display: flex;
+}
+
+.fitness__persona-description div:nth-child(2) {
+  margin-left: 24px;
+  border-radius: 32px;
+  background-color: #FFFCFC;
+  padding: 40px;
+}
+
+.fitness__persona-description p {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  line-height: 36px;
+}
+
+.fitness__persona-description p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.fitness__persona-description p:last-child {
+  margin-bottom: 0;
+}
+
+.fitness__persona-card div:nth-child(3) {
+  font-size: 1.5rem;
+  margin-top: 24px;
+  border-radius: 32px;
+  background-color: #FFFCFC;
+  padding: 40px;
+}
+
+.fitness__persona-card div:nth-child(3) p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.fitness__persona-card div:nth-child(3) p {
+  margin-bottom: 24px;
+}
+
+.fitness__persona-card div:nth-child(3) p:last-child {
+  margin-bottom: 0;
+}
+
+/********** 6.4. information architecture **********/
+
+.fitness__ia {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fitness__ia img {
+  max-width: 1200px;
+  margin-bottom: 160px;
+}
+
+.fitness__ia div:nth-of-type(2) img {
+  margin-bottom: 0px;
+}
+
+.fitness__ia h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F44336;
+  height: 128px;
+  margin: 240px 0 32px;
+  padding-left: 48px;
+  border-radius: 32px;
+  background-color: #FFFCFC;
+  border: 8px solid #F44336;
+}
+
+.fitness__ia > p {
+  font-size: 1.75rem;
+  margin: 0 0 112px 26px;
+  position: relative;
+  line-height: 48px;
+}
+
+.fitness__ia p::before {
+  content: url(../images/fitness/red-dot.png);
+  position: absolute;
+  top: -6px;
+  left: -26px;
+}
+
+.fitness__ia-content h3 {
+  display: inline-flex;
+  font-size: 1.75rem;
+  color: #F44336;
+  padding: 24px 38px;
+  border: 4px solid #F44336;
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+
+.fitness__ia-content p {
+  font-size: 1.5rem;
+  margin-bottom: 80px;
+  line-height: 48px;
+}
+
+/********** 6.5. low-fi wireframes **********/
+/********** 6.6. wireframes **********/
+/********** 6.7. design systems **********/
+/********** 6.8. logo design **********/
+
+.fitness__lf-wireframes,
+.fitness__wireframes,
+.fitness__design-system,
+.fitness__logo-design {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fitness__lf-wireframes img,
+.fitness__wireframes img,
+.fitness__design-system img,
+.fitness__logo-design img {
+  max-width: 1200px;
+}
+
+.fitness__lf-wireframes h2,
+.fitness__wireframes h2,
+.fitness__design-system h2,
+.fitness__logo-design h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F44336;
+  height: 128px;
+  margin: 240px 0 32px;
+  padding-left: 48px;
+  border-radius: 32px;
+  background-color: #FFFCFC;
+  border: 8px solid #F44336;
+}
+
+.fitness__lf-wireframes > p,
+.fitness__wireframes > p,
+.fitness__design-system > p,
+.fitness__logo-design > p {
+  font-size: 1.75rem;
+  margin: 0 0 112px 26px;
+  position: relative;
+  line-height: 48px;
+}
+
+.fitness__lf-wireframes p::before,
+.fitness__wireframes p::before,
+.fitness__design-system p::before,
+.fitness__logo-design p::before {
+  content: url(../images/fitness/red-dot.png);
+  position: absolute;
+  top: -6px;
+  left: -26px;
+}
+
+/********** 6.9. prototypes **********/
+
+.fitness__prototype {
+  background-color: #F44336;
+  border-radius: 0 240px 0 240px;
+  margin-top: 240px;
+  padding: 128px 0 240px;
+}
+
+.fitness__prototype > div:first-of-type {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fitness__prototype h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F44336;
+  height: 128px;
+  margin-bottom: 32px;
+  padding-left: 48px;
+  border-radius: 32px;
+  background-color: #FFFCFC;
+}
+
+.fitness__prototype > div:first-of-type p {
+  position: relative;
+  font-size: 1.75rem;
+  margin-left: 26px;
+  margin-bottom: 240px;
+  line-height: 48px;
+}
+
+.fitness__prototype > div:first-of-type p::before {
+  content: url(../images/fitness/white-dot.png);
+  position: absolute;
+  top: -6px;
+  left: -26px;
+}
+
+.fitness__prototype-one,
+.fitness__prototype-two,
+.fitness__prototype-three,
+.fitness__prototype-four {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 320px;
+}
+
+.fitness__prototype-one div:nth-of-type(2),
+.fitness__prototype-two div:nth-of-type(2),
+.fitness__prototype-three div:nth-of-type(2),
+.fitness__prototype-four div:nth-of-type(2) {
+  display: inherit;
+}
+
+.fitness__prototype-four {
+  margin-bottom: 0px;
+}
+
+.fitness__prototype-two div:nth-of-type(1),
+.fitness__prototype-four div:nth-of-type(1) {
+  order: 1;
+}
+
+.fitness__prototype h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFCFC;
+  margin-bottom: 48px;
+}
+
+.fitness__prototype p {
+  font-size: 1.5rem;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.fitness__prototype img {
+  width: 296px;
+}
+
+.fitness__prototype-one img:first-of-type,
+.fitness__prototype-three img:first-of-type {
+  margin: 0 56px 0 112px;
+}
+
+.fitness__prototype-two img:nth-of-type(2),
+.fitness__prototype-four img:nth-of-type(2) {
+  margin: 0 112px 0 56px;
+}
+
+/********** 6.10. learned **********/
+
+.fitness__learned {
+  max-width: 1200px;
+  margin: 0 auto 240px;
+}
+
+.fitness__learned h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F44336;
+  height: 128px;
+  margin: 240px 0 32px;
+  padding-left: 48px;
+  border-radius: 32px;
+  background-color: #FFFCFC;
+  border: 8px solid #F44336;
+}
+
+.fitness__learned div p {
+  font-size: 1.75rem;
+  margin: 0 0 48px 26px;
+  position: relative;
+  line-height: 48px;
+}
+
+.fitness__learned div p::before {
+  content: url(../images/fitness/red-dot.png);
+  position: absolute;
+  top: -6px;
+  left: -26px;
+}
+
+/********************
+  6.11. media queries
+*********************/
+
+@media (max-width: 1366px) {
+
+  /********** 6.11.1. global **********/
+
+  .fitness__presentation div,
+  .fitness__presentation img,
+  .fitness__research > *,
+  .fitness__persona,
+  .fitness__ia,
+  .fitness__ia img,
+  .fitness__lf-wireframes,
+  .fitness__lf-wireframes img,
+  .fitness__wireframes,
+  .fitness__wireframes img,
+  .fitness__design-system,
+  .fitness__design-system img,
+  .fitness__logo-design,
+  .fitness__logo-design img,
+  .fitness__prototype > div:first-of-type,
+  .fitness__prototype-one,
+  .fitness__prototype-two,
+  .fitness__prototype-three,
+  .fitness__prototype-four,
+  .fitness__learned  {
+    max-width: 960px;
+    padding: 0 24px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /********** 6.1. presentation **********/
+
+  .fitness__presentation h1 {
+    font-size: 3.5rem;
+    max-width: 400px;
+  }
+  
+  .fitness__presentation p {
+    font-size: 2rem;
+    max-width: 700px;
+  }
+
+  .fitness__presentation > img {
+    padding-bottom: 120px;
+  }
+
+  /********** 6.2. research **********/
+
+  .fitness__research {
+    border-radius: 0;
+  }
+
+  .fitness__research h2 {
+    font-size: 2.5rem;
+  }
+
+  .fitness__problems {
+    margin-right: 40px;
+  }
+
+  .fitness__problems,
+  .fitness__goals {
+    padding: 50px;
+  }
+
+  .fitness__problems h3,
+  .fitness__goals h3 {
+    font-size: 1.5rem;
+  }
+
+  .fitness__problems p,
+  .fitness__goals p {
+    margin-bottom: 28px;
+  }
+
+  /********** 6.3. persona **********/
+
+  .fitness__persona h2 {
+    font-size: 2.5rem;
+  }
+
+  .fitness__persona > p {
+    font-size: 1.5rem;
+  }
+
+  /********** 6.3.1. card **********/
+
+  .fitness__persona-card {
+    padding: 80px 92px;
+    border-radius: 60px;
+  }
+
+  .fitness__persona-card > div:first-child {
+    font-size: 1.5rem;
+  }
+
+  .fitness__persona-description {
+    display: block;
+  }
+
+  .fitness__persona-description div:first-of-type {
+    text-align: center;
+  }
+
+  .fitness__persona-description img {
+    margin-bottom: 24px;
+  }
+
+  .fitness__persona-description div:nth-child(2) {
+    margin-left: 0;
+  }
+
+  /********** 6.4. information architecture **********/
+
+  .fitness__ia h2 {
+    font-size: 2.5rem;
+  }
+
+  .fitness__ia > p {
+    font-size: 1.5rem;
+  }
+
+  .fitness__ia-content h3 {
+    font-size: 1.5rem;
+  }
+
+  /********** 6.5. low-fi wireframes **********/
+  /********** 6.6. wireframes **********/
+  /********** 6.7. design systems **********/
+  /********** 6.8. logo design **********/
+
+  .fitness__lf-wireframes h2,
+  .fitness__wireframes h2,
+  .fitness__design-system h2,
+  .fitness__logo-design h2 {
+    font-size: 2.5rem;
+  }
+
+  .fitness__lf-wireframes > p,
+  .fitness__wireframes > p,
+  .fitness__design-system > p,
+  .fitness__logo-design > p {
+    font-size: 1.5rem;
+  }
+
+  /********** 6.9. prototypes **********/
+
+  .fitness__prototype {
+    border-radius: 0;
+  }
+
+  .fitness__prototype h2 {
+    font-size: 2.5rem;
+  }
+
+  .fitness__prototype > div:first-of-type p {
+    font-size: 1.5rem;
+  }
+
+  .fitness__prototype-one,
+  .fitness__prototype-two,
+  .fitness__prototype-three,
+  .fitness__prototype-four {
+    margin-bottom: 240px;
+  }
+
+  .fitness__prototype-four {
+    margin-bottom: 0px;
+  }
+
+  .fitness__prototype h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .fitness__prototype p {
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  .fitness__prototype img {
+    max-width: 248px;
+    width: 100%;
+  }
+
+  .fitness__prototype-one img:first-of-type,
+  .fitness__prototype-three img:first-of-type {
+    margin: 0 40px 0 56px;
+  }
+
+  .fitness__prototype-two img:nth-of-type(2),
+  .fitness__prototype-four img:nth-of-type(2) {
+    margin: 0 56px 0 40px;
+  }
+
+  /********** 6.10. learned **********/
+
+  .fitness__learned h2 {
+    font-size: 2.5rem;
+  }
+
+  .fitness__learned div p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /********** 6.11.1. global **********/
+
+  .fitness__presentation div,
+  .fitness__presentation img,
+  .fitness__research > *,
+  .fitness__persona,
+  .fitness__ia,
+  .fitness__ia img,
+  .fitness__lf-wireframes,
+  .fitness__lf-wireframes img,
+  .fitness__wireframes,
+  .fitness__wireframes img,
+  .fitness__design-system,
+  .fitness__design-system img,
+  .fitness__logo-design,
+  .fitness__logo-design img,
+  .fitness__prototype > div:first-of-type,
+  .fitness__prototype-one,
+  .fitness__prototype-two,
+  .fitness__prototype-three,
+  .fitness__prototype-four,
+  .fitness__learned  {
+    max-width: 655px;
+    padding: 0 16px;
+  }
+
+  /********** 6.1. presentation **********/
+
+  .fitness__presentation {
+    padding-top: 80px;
+  }
+
+  .fitness__presentation div img {
+    max-width: 120px;
+  }
+
+  .fitness__presentation h1 {
+    font-size: 2.5rem;
+    max-width: 270px;
+  }
+
+  .fitness__presentation p {
+    font-size: 1.5rem;
+    margin-bottom: 120px;
+  }
+
+  .fitness__presentation > img {
+    padding-bottom: 120px;
+  }
+
+  /********** 6.2. research **********/
+
+  .fitness__research {
+    border-radius: 0 0 80px;
+  }
+
+  .fitness__research h2 {
+    font-size: 1.5rem;
+    height: 80px;
+    margin-bottom: 40px;
+    padding-left: 32px;
+    border-radius: 24px;
+  }
+
+  .fitness__research > div:nth-child(2) {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .fitness__problems,
+  .fitness__goals {
+    max-width: none;
+  }
+
+  .fitness__problems {
+    margin-bottom: 24px;
+  }
+
+  .fitness__problems h3,
+  .fitness__goals h3 {
+    font-size: 1.25rem;
+  }
+  
+  .fitness__problems p,
+  .fitness__goals p {
+    font-size: 1rem;
+  }
+
+  .fitness__problems p::before,
+  .fitness__goals p::before {
+    top: 0px;
+    transform: scale(.7);
+  }
+
+  /********** 6.3. persona **********/
+
+  .fitness__persona h2 {
+    font-size: 1.5rem;
+    height: 80px;
+    margin-top: 120px;
+    border: 4px solid #F44336;
+    padding-left: 32px;
+    border-radius: 24px;
+  }
+
+  .fitness__persona > p {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+
+  .fitness__persona p::before {
+    top: 0px;
+    transform: scale(.7);
+  }
+
+  /********** 6.3.1. card **********/
+
+  .fitness__persona-card {
+    padding: 20px 20px;
+    border-radius: 40px;
+  }
+
+  .fitness__persona-card > div:first-child,
+  .fitness__persona-description p,
+  .fitness__persona-card div:nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .fitness__persona-card div:nth-child(3) p {
+    line-height: 24px;
+  }
+
+  .fitness__persona-description img {
+    width: 100%;
+  }
+
+  /********** 6.4. information architecture **********/
+
+  .fitness__ia h2 {
+    font-size: 1.5rem;
+    height: 80px;
+    margin-top: 120px;
+    border: 4px solid #F44336;
+    padding-left: 32px;
+    border-radius: 24px;
+  }
+
+  .fitness__ia > p {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+
+  .fitness__ia p::before {
+    top: 0px;
+    transform: scale(.7);
+  }
+
+  .fitness__ia-content h3 {
+    font-size: 1rem;
+    padding: 8px 30px;
+    border-radius: 16px;
+  }
+
+  .fitness__ia-content p {
+    font-size: 0.875rem;
+    line-height: 24px;
+  }
+
+  /********** 6.5. low-fi wireframes **********/
+  /********** 6.6. wireframes **********/
+  /********** 6.7. design systems **********/
+  /********** 6.8. logo design **********/
+
+  .fitness__lf-wireframes h2,
+  .fitness__wireframes h2,
+  .fitness__design-system h2,
+  .fitness__logo-design h2 {
+    font-size: 1.5rem;
+    height: 80px;
+    margin-top: 120px;
+    border: 4px solid #F44336;
+    padding-left: 32px;
+    border-radius: 24px;
+  }
+
+  .fitness__lf-wireframes > p,
+  .fitness__wireframes > p,
+  .fitness__design-system > p,
+  .fitness__logo-design > p {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+
+  .fitness__lf-wireframes p::before,
+  .fitness__wireframes p::before,
+  .fitness__design-system p::before,
+  .fitness__logo-design p::before {
+    top: 0px;
+    transform: scale(.7);
+  }
+
+  /********** 6.9. prototypes **********/
+
+  .fitness__prototype {
+    margin-top: 120px;
+    padding: 120px 0 120px;
+  }
+
+  .fitness__prototype h2 {
+    font-size: 1.5rem;
+    height: 80px;
+    margin-bottom: 40px;
+    padding-left: 32px;
+    border-radius: 24px;
+  }
+
+  .fitness__prototype > div:first-of-type p {
+    font-size: 1rem;
+    line-height: 32px;
+    margin-bottom: 160px;
+  }
+  
+  .fitness__prototype > div:first-of-type p::before {
+    top: 0px;
+    transform: scale(.7);
+  }
+
+  .fitness__prototype p {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .fitness__prototype-one,
+  .fitness__prototype-two,
+  .fitness__prototype-three,
+  .fitness__prototype-four {
+    display: block;
+    margin-bottom: 160px;
+    text-align: center;
+  }
+
+  .fitness__prototype-four {
+    margin-bottom: 0px;
+  }
+
+  .fitness__prototype h3 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+
+  .fitness__prototype-one div:nth-of-type(2),
+  .fitness__prototype-two div:nth-of-type(2),
+  .fitness__prototype-three div:nth-of-type(2),
+  .fitness__prototype-four div:nth-of-type(2) {
+    margin-top: 32px;
+  }
+
+  .fitness__prototype img {
+    width: 48%;
+  }
+
+  .fitness__prototype-one img:first-of-type,
+  .fitness__prototype-three img:first-of-type {
+    margin: 0 8px 0 0;
+  }
+
+  
+  .fitness__prototype-two img:nth-of-type(2),
+  .fitness__prototype-four img:nth-of-type(2) {
+    margin: 0 0 0 8px;
+  }
+
+  /********** 6.10. learned **********/
+
+  .fitness__learned {
+    margin-bottom: 120px;
+  }
+
+  .fitness__learned h2 {
+    font-size: 1.5rem;
+    height: 80px;
+    margin-top: 120px;
+    border: 4px solid #F44336;
+    padding-left: 32px;
+    border-radius: 24px;
+  }
+
+  .fitness__learned div p {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+  
+  .fitness__learned div p::before {
+    top: 0px;
+    transform: scale(.7);
+  }
+}

@@ -1,0 +1,688 @@
+/********************
+table of contents
+
+1. global
+  1.1. top navbar
+    1.1.1. hamburger menu
+    1.1.2. case studies
+    1.1.2. EN index
+    1.1.3. EN about
+    1.1.4. PT index
+    1.1.5. PT about
+  1.2. JS check button
+  1.3. footer
+2. case studies
+3. about
+  3.1. cta
+4. next project option
+5. media queries
+
+*********************/
+
+/********************
+  1. global
+*********************/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.body {
+  background-color: #f5f5f5;
+  color: #0a0a0a;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+/********** 1.1. top navbar **********/
+
+.nav {
+  max-width: 1200px;
+  padding: 32px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.nav__logo {
+  text-transform: uppercase;
+}
+
+.nav__menu {
+  display: inherit;
+  text-transform: uppercase;
+}
+
+.nav__menu li {
+  list-style-type: none;
+  margin-left: 48px;
+}
+
+.nav__menu li:hover {
+  text-decoration: underline;
+}
+
+.nav__menu li:nth-child(4) {
+  margin-left: 5px;
+}
+
+.nav__menu li:nth-child(4)::before  {
+  content: '';
+  display: inline-block;
+  padding: 8px 1px;
+  background-color: #0a0a0a;
+}
+
+/********** 1.1.1. hamburger menu **********/
+
+.menu-btn {
+  display: none;
+}
+
+/********** 1.1.2. case studies **********/
+
+.nav.case-study li:nth-child(3) a {
+  font-weight: 700;
+}
+
+.nav.case-study li:nth-child(4) a {
+  color: #808080;
+  cursor: unset;
+}
+
+.nav.case-study li:nth-child(4):hover {
+  text-decoration: none;
+}
+
+.nav.case-study li:nth-child(4)::before {
+  background-color: #808080;
+}
+
+/********** 1.1.3. EN index **********/
+
+.nav-index li:nth-child(1),
+.nav-index li:nth-child(3) {
+ font-weight: 700;
+}
+
+/********** 1.1.4. EN about **********/
+
+.nav-about li:nth-child(2),
+.nav-about li:nth-child(3) {
+ font-weight: 700;
+}
+
+/********** 1.1.5. PT index **********/
+
+.nav-index-pt li:nth-child(1),
+.nav-index-pt li:nth-child(4) {
+  font-weight: 700;
+}
+
+/********** 1.1.6. PT about **********/
+
+.nav-about-pt li:nth-child(2),
+.nav-about-pt li:nth-child(4) {
+  font-weight: 700;
+}
+
+/********** 1.2. JS check button **********/
+
+.check-more {
+  display: none;
+}
+
+.check-more.show {
+  display: inherit;
+}
+
+.check-more-btn {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 120px auto;
+  padding: 40px 160px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  border-style: none;
+}
+
+.check-more-btn.hide {
+  display: none;
+}
+
+.post-scroll {
+  scroll-margin-top: 40px;
+}
+
+/********** 1.3. footer **********/
+
+.footer {
+  max-width: 1200px;
+  padding: 32px 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.footer__container {
+  display: inherit;
+  align-items: center;
+}
+
+.footer__container button {
+  width: 176px;
+  height: 48px;
+  border-radius: 8px;
+  border: 3px solid #0a0a0a;
+  background-color: #f5f5f5;
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer__container img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.footer__container a:nth-child(n+2) {
+  margin-left: 24px;
+}
+
+.footer p {
+  color: #808080;
+}
+
+/********************
+  2. case studies
+*********************/
+
+.index-header {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.index-header h1 {
+  margin: 144px 0 170px;
+  font-size: 3.5rem;
+}
+
+.showcase {
+  display: flex;
+  margin-bottom: 160px;
+}
+
+.showcase__content h2 {
+ font-size: 2.5rem;
+ margin-bottom: 16px;
+}
+
+.showcase__content p {
+ font-size: 2rem;
+ color: #808080;
+}
+
+.showcase img {
+  width: 400px;
+  height: 400px;
+  min-width: 400px;
+  border-radius: 16px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.showcase:nth-child(even) a {
+  order: 1;
+}
+
+.showcase__content {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcase:nth-child(even) .showcase__content {
+  margin-right: 40px;
+}
+
+.showcase:nth-child(odd) .showcase__content {
+  margin-left: 40px;
+}
+
+.showcase:nth-child(3){
+  margin-bottom: 212px;
+}
+
+/********************
+  3. about
+*********************/
+
+.about {
+  max-width: 800px;
+  margin-top: 128px;
+}
+
+.about h2 {
+  font-size: 3.5rem;
+  margin-bottom: 24px;
+}
+
+.about p {
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+/********** 3.1. cta **********/
+
+.cta__contact,
+.cta__resume {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 48px 0 144px 0;
+  width: 192px;
+  height: 56px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cta__contact  {
+  color: #f5f5f5;
+  background-color: #0a0a0a;
+  border-style: none;
+}
+
+.cta__resume {
+  background-color: #f5f5f5;
+  border: 3px solid #0a0a0a;
+}
+
+.cta a {
+  margin-right: 24px;
+}
+
+/********************
+  4. next project option
+*********************/
+
+.next-project {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.next-project__holder {
+  display: inherit;
+  width: 100%;
+  border: 4px solid #808080;
+  margin-bottom: 48px;
+  border-radius: 10px;
+}
+
+.next-project__holder a {
+  display: inherit;
+}
+
+.next-project__holder:nth-child(1) {
+  margin-right: 68px;
+}
+
+.next-project__holder img {
+  max-width: 224px;
+  border-radius: 5px 0 0 5px;
+}
+
+.next-project__content {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+}
+
+.next-project__content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.next-project__content p {
+  color: #808080;
+}
+
+/********************
+  5. media queries
+*********************/
+
+@media (max-width: 1366px) {
+
+  /********** 1. global **********/
+
+  .main {
+    max-width: 960px;
+    padding: 0 24px;
+  }
+
+  /********** 1.1. top navbar **********/
+
+  .nav {
+    max-width: 960px;
+    padding: 24px;
+  }
+
+  /********** 1.3. footer **********/
+
+  .footer {
+    max-width: 960px;
+    padding: 24px;
+  }
+
+  /********** 2. case studies **********/
+
+  .index-header {
+    max-width: 960px;
+    padding: 0 24px;
+  }
+
+  .index-header h1 {
+    margin: 128px 0;
+    font-size: 3rem;
+  }
+
+  .showcase__content h2 {
+    font-size: 2rem;
+  }
+
+  .showcase__content p {
+    font-size: 1.5rem;
+  }
+
+  .showcase img {
+    width: 300px;
+    height: 300px;
+    min-width: 300px;
+  }
+
+  .showcase:nth-child(even) .showcase__content {
+    margin-right: 24px;
+  }
+
+  .showcase:nth-child(odd) .showcase__content {
+    margin-left: 24px;
+  }
+
+  /********** 3. about **********/
+
+  .about h2 {
+    font-size: 3rem;
+  }
+
+  /********** 4. next project option **********/
+
+  .next-project {
+    max-width: 960px;
+    padding: 0 24px;
+  }
+
+  .next-project__holder:nth-child(1) {
+    margin-right: 24px;
+  }
+
+  .next-project__holder img {
+    max-width: 192px;
+  }
+
+  .next-project__content {
+    padding: 16px;
+  }
+
+  .next-project__content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /********** 1. global **********/
+
+  .main {
+    max-width: 655px;
+    padding: 0 16px;
+  }
+
+  /********** 1.1. top navbar **********/
+
+  .nav {
+    max-width: 655px;
+    padding: 16px;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__menu.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+
+  .nav__menu.open li {
+    margin-bottom: 8%;
+  }
+
+  .nav__menu li {
+    margin: 0;
+  }
+
+  .nav__menu.open li:nth-child(4) {
+    margin-left: 0;
+  }
+
+  .nav__menu.open li:nth-child(4)::before  {
+    content: none;
+  }
+
+  /********** 1.1.1. hamburger menu **********/
+
+  .menu-btn {
+    position: relative;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu-btn__burger {
+    width: 24px;
+    height: 4px;
+    background: #0a0a0a;
+    border-radius: 4px;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: #0a0a0a;
+    border-radius: 4px;
+  }
+
+  .menu-btn__burger::before {
+    transform: translateY(-8px);
+  }
+
+  .menu-btn__burger::after {
+    transform: translateY(8px);
+  }
+
+  .menu-btn.open .menu-btn__burger {
+    background: transparent;
+  }
+
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg);
+  }
+
+  /********** 1.2. JS check button **********/
+
+  .check-more-btn {
+    font-size: 1.25rem;
+    margin: 100px auto;
+    padding: 40px 70px;
+  }
+
+  /********** 1.3. footer **********/
+
+  .footer {
+    max-width: 655px;
+    padding: 16px;
+  }
+
+  .footer__container button {
+    width: 144px;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+    margin-left: 16px;
+  }
+
+  /********** 2. case studies **********/
+
+  .index-header {
+    max-width: 655px;
+    padding: 0 16px;
+  }
+
+  .index-header h1 {
+    margin: 96px 0;
+    font-size: 2.5rem;
+  }
+
+  .showcase {
+    margin-bottom: 112px;
+  }
+
+  .showcase__content h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .showcase__content p {
+    font-size: 1rem;
+  }
+
+  .showcase img {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+  }
+
+  .showcase:nth-child(even) .showcase__content {
+    margin-right: 16px;
+  }
+
+  .showcase:nth-child(odd) .showcase__content {
+    margin-left: 16px;
+  }
+
+  .showcase:nth-child(3){
+    margin-bottom: 128px;
+  }
+
+  /********** 3. about **********/
+
+  .about {
+    margin-top: 96px;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  /********** 3.1. cta **********/
+
+  .cta__contact {
+    margin: 48px 0 24px;
+  }
+
+  .cta__resume {
+    margin: 0 0 96px;
+  }
+
+  /********** 4. next project option **********/
+
+  .next-project {
+    max-width: 655px;
+    padding: 0 16px;
+    display: block;
+  }
+
+  .next-project__holder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .next-project__holder:first-child {
+    margin-bottom: 24px;
+  }
+
+  .next-project__holder img {
+    max-width: 160px;
+  }
+
+  .next-project__content {
+    padding: 8px;
+  }
+
+  .next-project__holder:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .next-project__content h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .next-project__content p {
+    font-size: 0.875rem;
+  }
+}
