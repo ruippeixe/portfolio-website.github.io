@@ -1,0 +1,21 @@
+.container-style {
+  &.container-style-bg {
+    background-color: #f0f0f0;
+  }
+
+  &.finsolutia {
+    background-color: #004fb2;
+
+    &.light {
+      background-color: #eaeff6;
+    }
+  }
+
+  &.twinkloo {
+    background-color: #5c2d91;
+
+    &.light {
+      background-color: #efe9f6;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.fs-main {
+  .presentation {
+    display: flex;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (max-width: 576px) {
+        margin-bottom: 24px;
+      }
+
+      .company {
+        font-size: 2.5rem;
+        line-height: 125%;
+
+        @media (max-width: 576px) {
+          font-size: 2rem;
+        }
+      }
+      
+      .subject {
+        font-size: 2.5rem;
+        color: #fff;
+
+        @media (max-width: 576px) {
+          font-size: 2rem;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          width: 32px;
+          height: 4px;
+          margin-top: 8px;
+          border-radius: 16px;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      img {
+        max-width: 480px;
+        width: 100%;
+      }
+    }
+  }
+
+  .project-summary {
+    .desc {
+      display: flex;
+      align-items: center;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      line-height: 150%;
+
+      @media (max-width: 576px) {
+        font-size: 0.875rem;
+      }
+
+      > div {
+        width: 100%;
+        text-align: center;
+      }
+
+      &.label {
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+
+  .overview {
+    .title {
+      font-size: 2rem;
+      margin-bottom: 24px;
+
+      @media (max-width: 576px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      line-height: 150%;
+    }
+  }
+
+  .ia {
+    .title {
+      font-size: 2rem;
+      margin-bottom: 32px;
+
+      @media (max-width: 576px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .prototype {
+    .title {
+      font-size: 2rem;
+      margin-bottom: 32px;
+      color: #fff;
+
+      @media (max-width: 576px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .live {
+    .title {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #004fb2;
+
+      @media (max-width: 576px) {
+        font-size: 2rem;
+        margin-bottom: 8px;
+      }
+    }
+
+    .suggestion {
+      text-align: center;
+      color: #666666;
+      margin-bottom: 24px;
+
+      @media (max-width: 576px) {
+        font-size: 0.875rem;
+      }
+    }
+
+    .live-btn {
+      text-align: center;
+    }
+  }
+}

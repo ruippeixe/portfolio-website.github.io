@@ -23,7 +23,9 @@ table of contents
   1. global
 *********************/
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -31,7 +33,8 @@ table of contents
 
 :root {
   font-size: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 .body {
@@ -42,6 +45,7 @@ table of contents
 .main {
   max-width: 1200px;
   margin: auto;
+  min-height: 100vh;
 }
 
 a {
@@ -52,12 +56,11 @@ a {
 /********** 1.1. top navbar **********/
 
 .nav {
-  max-width: 1200px;
-  padding: 32px 0;
+  padding: 24px 0;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .nav__logo {
@@ -66,7 +69,7 @@ a {
 
 .nav__menu {
   display: inherit;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .nav__menu li {
@@ -82,10 +85,10 @@ a {
   margin-left: 5px;
 }
 
-.nav__menu li:nth-child(4)::before  {
-  content: '';
+.nav__menu li:nth-child(4)::before {
+  content: "";
   display: inline-block;
-  padding: 8px 1px;
+  padding: 6px 1px;
   background-color: #0a0a0a;
 }
 
@@ -118,14 +121,14 @@ a {
 
 .nav-index li:nth-child(1),
 .nav-index li:nth-child(3) {
- font-weight: 700;
+  font-weight: 700;
 }
 
 /********** 1.1.4. EN about **********/
 
 .nav-about li:nth-child(2),
 .nav-about li:nth-child(3) {
- font-weight: 700;
+  font-weight: 700;
 }
 
 /********** 1.1.5. PT index **********/
@@ -175,41 +178,46 @@ a {
 /********** 1.3. footer **********/
 
 .footer {
-  max-width: 1200px;
-  padding: 32px 0;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 700;
+  background-color: #f0f0f0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .footer__container {
-  display: inherit;
+  /* max-width: 992px; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
   align-items: center;
 }
 
 .footer__container button {
-  width: 176px;
-  height: 48px;
-  border-radius: 8px;
-  border: 3px solid #0a0a0a;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 2px solid #0a0a0a;
   background-color: #f5f5f5;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
 }
 
 .footer__container img {
-  width: 40px;
+  width: 32px;
   cursor: pointer;
 }
 
-.footer__container a:nth-child(n+2) {
+.footer__container a:nth-child(n + 2) {
   margin-left: 24px;
 }
 
-.footer p {
+.footer__copyright {
+  font-size: 0.875rem;
+  font-weight: 700;
   color: #808080;
 }
 
@@ -233,13 +241,13 @@ a {
 }
 
 .showcase__content h2 {
- font-size: 2.5rem;
- margin-bottom: 16px;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
 }
 
 .showcase__content p {
- font-size: 2rem;
- color: #808080;
+  font-size: 2rem;
+  color: #808080;
 }
 
 .showcase img {
@@ -268,7 +276,7 @@ a {
   margin-left: 40px;
 }
 
-.showcase:nth-child(3){
+.showcase:nth-child(3) {
   margin-bottom: 212px;
 }
 
@@ -278,42 +286,42 @@ a {
 
 .about {
   max-width: 800px;
-  margin-top: 128px;
+  margin-top: 80px;
 }
 
 .about h2 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin-bottom: 24px;
 }
 
 .about p {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   line-height: 150%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /********** 3.1. cta **********/
 
 .cta__contact,
 .cta__resume {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin: 48px 0 144px 0;
-  width: 192px;
-  height: 56px;
+  margin: 32px 0 104px 0;
+  padding: 16px 32px;
   border-radius: 8px;
   cursor: pointer;
 }
 
-.cta__contact  {
+.cta__contact {
   color: #f5f5f5;
   background-color: #0a0a0a;
   border-style: none;
+  border: 2px solid #0a0a0a;
 }
 
 .cta__resume {
   background-color: #f5f5f5;
-  border: 3px solid #0a0a0a;
+  border: 2px solid #0a0a0a;
 }
 
 .cta a {
@@ -325,7 +333,7 @@ a {
 *********************/
 
 .next-project {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   max-width: 1200px;
   margin: auto;
@@ -373,26 +381,11 @@ a {
 *********************/
 
 @media (max-width: 1366px) {
-
   /********** 1. global **********/
 
   .main {
     max-width: 960px;
     padding: 0 24px;
-  }
-
-  /********** 1.1. top navbar **********/
-
-  .nav {
-    max-width: 960px;
-    padding: 24px;
-  }
-
-  /********** 1.3. footer **********/
-
-  .footer {
-    max-width: 960px;
-    padding: 24px;
   }
 
   /********** 2. case studies **********/
@@ -461,7 +454,6 @@ a {
 }
 
 @media (max-width: 768px) {
-
   /********** 1. global **********/
 
   .main {
@@ -470,11 +462,6 @@ a {
   }
 
   /********** 1.1. top navbar **********/
-
-  .nav {
-    max-width: 655px;
-    padding: 16px;
-  }
 
   .nav__menu {
     display: none;
@@ -506,7 +493,7 @@ a {
     margin-left: 0;
   }
 
-  .nav__menu.open li:nth-child(4)::before  {
+  .nav__menu.open li:nth-child(4)::before {
     content: none;
   }
 
@@ -532,7 +519,7 @@ a {
 
   .menu-btn__burger::before,
   .menu-btn__burger::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 24px;
     height: 4px;
@@ -569,11 +556,6 @@ a {
   }
 
   /********** 1.3. footer **********/
-
-  .footer {
-    max-width: 655px;
-    padding: 16px;
-  }
 
   .footer__container button {
     width: 144px;
@@ -623,7 +605,7 @@ a {
     margin-left: 16px;
   }
 
-  .showcase:nth-child(3){
+  .showcase:nth-child(3) {
     margin-bottom: 128px;
   }
 

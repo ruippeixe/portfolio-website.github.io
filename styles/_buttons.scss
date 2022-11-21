@@ -1,0 +1,44 @@
+.btn {
+  display: inline-flex;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &.full-width {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .arrow-right {
+    margin-top: 4px;
+    margin-left: 8px;
+  }
+
+  &.fs {
+    background-color: #004fb2;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    font-size: 1.25rem;
+    padding: 16px 24px;
+
+    @media (max-width: 576px) {
+      font-size: 1rem;
+    }
+  }
+
+  &.tw {
+    background-color: #5c2d91;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    font-size: 1.25rem;
+    padding: 16px 24px;
+
+    &.reverse {
+      background-color: #fff;
+      color: #5c2d91;
+    }
+  }
+}

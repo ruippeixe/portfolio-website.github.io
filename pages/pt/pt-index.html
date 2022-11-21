@@ -1,110 +1,381 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio UX/UI - Rui Peixe</title>
-  <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico" />
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css -->
   <link rel="stylesheet" href="../../styles/normalize.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../../styles/bootstrap-grid.css">
+  <!-- main css -->
   <link rel="stylesheet" href="../../styles/main.css">
+  <!-- sass -->
+  <link rel="stylesheet" href="../../dist/main.css">
+  <!-- js -->
   <script src="../../scripts/main.js" defer></script>
 </head>
+
 <body class="body">
+
   <!-- top nav bar -->
-  <nav class="nav nav-index-pt">
-    <a href="pt-index.html">
-      <div class="nav__logo">ruippeixe</div>
-    </a>
-    <div class="menu-btn">
-      <div class="menu-btn__burger"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <nav class="nav nav-index-pt">
+          <a href="pt-index.html">
+            <div class="nav__logo">ruippeixe</div>
+          </a>
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+          <ul class="nav__menu">
+            <li><a href="pt-index.html">
+                casos de estudo
+              </a></li>
+            <li><a href="pt-about.html">
+                sobre
+              </a></li>
+            <li><a href="../../index.html">
+                EN
+              </a></li>
+            <li><a href="pt-index.html">
+                PT
+              </a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <ul class="nav__menu">
-      <li><a href="pt-index.html">
-        casos de estudo
-      </a></li>
-      <li><a href="pt-about.html">
-        sobre
-      </a></li>
-      <li><a href="../../index.html">
-        EN
-      </a></li>
-      <li><a href="pt-index.html">
-        PT
-      </a></li>
-    </ul>
-  </nav>
+  </div>
+
   <!-- brief presentation -->
   <header class="index-header">
-    <h1>Olá!<br> Chamo-me Rui Peixe e sou um designer de UX/UI que também escreve código.</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Olá!<br> Chamo-me Rui Peixe e sou um designer de UX/UI que também escreve código.</h1>
+        </div>
+      </div>
+    </div>
   </header>
+
   <!-- case studies page content -->
   <main class="main">
-    <!-- 'travel guide app' case study  -->
-    <article class="showcase">
-      <a href="../en/travel.html">
-        <img src="../../images/showcase-travel.jpg" alt="exemplo do protótipo">
-      </a>
-      <div class="showcase__content">
-        <h2>Travel Guide App</h2>
-        <p>A guiar qualquer pessoa por lugares novos de forma muito simples.</p>
+    <!-- finsolutia website  -->
+    <article>
+      <div class="container-style container-style-bg">
+        <div class="container p-top-56 p-bottom-56">
+          <div class="row">
+            <div class="col">
+
+              <div class="case">
+
+                <div class="img-preview">
+                  <a href="../../pages/en/finsolutia.html">
+                    <img src="../../images/company/finsolutia/case-preview.png" alt="">
+                  </a>
+                </div>
+
+                <div class="desc">
+
+                  <div class="tags">
+                    <div class="box">
+                      <p>UX</p>
+                    </div>
+                    <div class="box">
+                      <p>UI</p>
+                    </div>
+                    <div class="box">
+                      <p>Front End</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="title">Finsolutia Website</h2>
+                    <p class="summary">Website institucional que tem como função a apresentação da empresa ao público.</p>
+                  </div>
+
+                  <div>
+                    <a href="../../pages/en/finsolutia.html">
+                      <div class="btn">
+                        Ver Mais
+                        <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M5 10L4.34375 9.32812L8.20312 5.46875L0 5.46875L0 4.53125L8.20312 4.53125L4.34375 0.671875L5 0L10 5L5 10Z"
+                            fill="black" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </article>
-    <!-- 'architecture e-room' case study  -->
-    <article class="showcase">
-      <a href="../en/e-room.html">
-        <img src="../../images/showcase-a-eroom.png" alt="exemplo do protótipo">
-      </a>
-      <div class="showcase__content">
-        <h2>Architecture E-Room</h2>
-        <p>Um ambiente seguro que permite aos grupos de estudantes estudarem e trabalharem.</p>
+
+    <!-- twinkloo simulators and landing page  -->
+    <article>
+      <div class="container-style">
+        <div class="container p-top-56 p-bottom-56">
+          <div class="row">
+            <div class="col">
+
+              <div class="case reverse">
+
+                <div class="img-preview">
+                  <a href="../../pages/en/twinkloo.html">
+                    <img src="../../images/company/twinkloo/case-preview.png" alt="">
+                  </a>
+                </div>
+
+                <div class="desc">
+
+                  <div class="tags">
+                    <div class="box">
+                      <p>UX</p>
+                    </div>
+                    <div class="box">
+                      <p>UI</p>
+                    </div>
+                    <div class="box">
+                      <p>Front End</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="title">Twinkloo Simuladores & Landing Page</h2>
+                    <p class="summary">Diferentes simuladores e uma landing page para o negócio de franchising.</p>
+                  </div>
+
+                  <div>
+                    <a href="../../pages/en/twinkloo.html">
+                      <div class="btn">
+                        Ver Mais
+                        <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M5 10L4.34375 9.32812L8.20312 5.46875L0 5.46875L0 4.53125L8.20312 4.53125L4.34375 0.671875L5 0L10 5L5 10Z"
+                            fill="black" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </article>
-    <!-- 'fitness arainer app' case study  -->
-    <article class="showcase">
-      <a href="../en/fitness.html">
-        <img src="../../images/showcase-fitness.jpg" alt="exemplo do protótipo">
-      </a>
-      <div class="showcase__content">
-        <h2>Fitness Trainer App</h2>
-        <p>A ajudar jovens a praticar exercício, com planos de treino que podem ser executados em qualquer lugar.</p>
+
+
+    <!-- archive  -->
+    <article>
+      <div class="container-style container-style-bg">
+        <div class="container p-top-56 p-bottom-56">
+          <div class="row">
+
+            <div class="col-12">
+              <div id="archive-section">
+                <h2 class="archive-title">Arquivo</h2>
+              </div>
+            </div>
+
+            <!-- 'travel guide app' case study  -->
+            <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+              <div class="archive-case">
+
+
+                <div>
+                  <h3 class="title">Travel Guide App</h3>
+                </div>
+
+                <div class="img-preview">
+                  <a href="../../pages/en/travel.html">
+                    <img src="../../images/travel-preview.png" alt="">
+                  </a>
+                </div>
+
+                <div>
+                  <p class="desc">A guiar qualquer pessoa por lugares novos de forma muito simples.</p>
+                </div>
+
+                <div class="btn-container">
+                  <a href="../../pages/en/travel.html">
+                    <div class="btn full-width">
+                      Ver Mais
+                      <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5 10L4.34375 9.32812L8.20312 5.46875L0 5.46875L0 4.53125L8.20312 4.53125L4.34375 0.671875L5 0L10 5L5 10Z"
+                          fill="black" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+
+
+              </div>
+            </div>
+
+            <!-- 'architecture e-room' case study  -->
+            <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+              <div class="archive-case">
+                <div>
+                  <h3 class="title">Architecture E-Room</h3>
+                </div>
+
+                <div class="img-preview">
+                  <a href="../../pages/en/e-room.html">
+                    <img src="../../images/eroom-preview.png" alt="">
+                  </a>
+                </div>
+
+                <div>
+                  <p class="desc">Um ambiente seguro que permite aos grupos de estudantes estudarem e trabalharem.</p>
+                </div>
+
+                <div class="btn-container">
+                  <a href="../../pages/en/e-room.html">
+                    <div class="btn full-width">
+                      Ver Mais
+                      <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5 10L4.34375 9.32812L8.20312 5.46875L0 5.46875L0 4.53125L8.20312 4.53125L4.34375 0.671875L5 0L10 5L5 10Z"
+                          fill="black" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 'fitness arainer app' case study  -->
+            <div class="col-12 col-sm-4">
+              <div class="archive-case">
+                <div>
+                  <h3 class="title">Fitness Trainer App</h3>
+                </div>
+
+                <div class="img-preview">
+                  <a href="../../pages/en/fitness.html">
+                    <img src="../../images/fitness-preview.png" alt="">
+                  </a>
+                </div>
+
+                <div>
+                  <p class="desc">A ajudar jovens a praticar exercício, com planos de treino que podem ser executados em qualquer lugar.</p>
+                </div>
+
+                <div class="btn-container">
+                  <a href="../../pages/en/fitness.html">
+                    <div class="btn full-width">
+                      Ver Mais
+                      <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5 10L4.34375 9.32812L8.20312 5.46875L0 5.46875L0 4.53125L8.20312 4.53125L4.34375 0.671875L5 0L10 5L5 10Z"
+                          fill="black" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </article>
+
+
+    <!-- github portfolio page -->
+    <article>
+      <div class="container-style">
+        <div class="container p-top-96 p-bottom-96">
+          <div class="row">
+            <div class="col">
+
+              <div class="github-portfolio">
+
+                <div>
+                  <p class="desc">Também pode ver <a href="https://github.com/ruippeixe/portfolio-website.github.io"
+                      target="_blank">aqui</a></p>
+                  <p class="desc">como programei este portfólio.</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </article>
-  <!-- end of case studies page content -->
+    <!-- end of case studies page content -->
   </main>
   <footer class="footer">
-    <div class="footer__container">
-      <!-- my email contact -->
-      <a href="mailto:rpp@ruippeixe.com" 
-      rel="noopener noreferrer nofollow" target="_blank">
-        <button>
-          Contacte-me
-        </button>
-      </a>
-      <!-- my linkedin page -->
-      <a href="https://www.linkedin.com/in/ruippeixe/" target="_blank">
-        <img src="../../images/linkedin-logo.svg" alt="my linkedin page">
-      </a>
-      <!-- my github profile -->
-      <a href="https://github.com/ruippeixe" target="_blank">
-        <img src="../../images/github-logo.svg" alt="my github page">
-      </a>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="footer__container">
+            <div class="footer__links">
+              <!-- my email contact -->
+              <a href="mailto:rpp@ruippeixe.com" rel="noopener noreferrer nofollow" target="_blank">
+                <button>
+                  Contacte-me
+                </button>
+              </a>
+              <!-- my linkedin page -->
+              <a href="https://www.linkedin.com/in/ruippeixe/" target="_blank">
+                <img src="../../images/linkedin-logo.svg" alt="my linkedin page">
+              </a>
+              <!-- my github profile -->
+              <a href="https://github.com/ruippeixe" target="_blank">
+                <img src="../../images/github-logo.svg" alt="my github page">
+              </a>
+            </div>
+            <div class="footer__copyright">
+              <p>&copy;
+                <script>document.write(new Date().getFullYear())</script>
+                Rui Peixe
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>© 2022 Rui Peixe</p>
   </footer>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6097f8be185beb22b30b8dd3/1f58q7a8f';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6097f8be185beb22b30b8dd3/1f58q7a8f';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
   <!--End of Tawk.to Script-->
 </body>
+
 </html>
