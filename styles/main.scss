@@ -1,10 +1,15 @@
-// added with version 2.0.0
-// overrides everything behind
+// fs-company
+@import "fs-company/finsolutia";
+@import "fs-company/twinkloo";
+@import "fs-company/fs-container-size";
+@import "fs-company/fs-container-style";
+@import "fs-company/fs-buttons";
 
-@import "global";
-@import "buttons";
-@import "container-size";
-@import "container-style";
-@import "archive";
-@import "finsolutia";
-@import "twinkloo";
+// portfolio
+@import "variables";
+@import "portfolio-defaults";
+@import "topbar";
+@import "footer";
+@import "btns";
+@import "homepage";
+@import "projects-list";

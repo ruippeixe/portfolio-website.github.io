@@ -1,381 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Guide App - UX/UI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- defaults css -->
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/defaults.css" />
+    <!-- css for 'travel guide app' case study -->
+    <link rel="stylesheet" href="../../styles/uxui-case-studies-archive/travel.css" />
+    <link rel="stylesheet" href="../../styles/uxui-case-studies-archive/check-more-btn.css" />
+    <link rel="stylesheet" href="../../styles/uxui-case-studies-archive/next-project.css" />
+    <!-- topbar and footer update -->
+    <link rel="stylesheet" href="../../styles/uxui-case-studies-archive/topbar.css" />
+    <link rel="stylesheet" href="../../styles/uxui-case-studies-archive/footer.css" />
+    <link rel="stylesheet" href="../../styles/uxui-case-studies-archive/custom-mq-archive.css" />
+    <!-- script -->
+    <script src="../../scripts/uxui-case-studies-archive/main.js" defer></script>
+    <script src="../../scripts/main.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVKQHDYE90"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-PVKQHDYE90");
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Guide App - UX/UI</title>
-  <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles/normalize.css">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="../../styles/bootstrap-grid.css">
-  <!-- main css -->
-  <link rel="stylesheet" href="../../styles/main.css">
-  <!-- css for 'travel guide app' case study -->
-  <link rel="stylesheet" href="../../styles/travel.css">
-  <script src="../../scripts/main.js" defer></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVKQHDYE90"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PVKQHDYE90');
-  </script>
-</head>
-
-<body class="body">
-  <!-- top nav bar -->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <nav class="nav case-study">
-          <a href="../../index.html">
-            <div class="nav__logo">ruippeixe</div>
-          </a>
-          <div class="menu-btn">
-            <div class="menu-btn__burger"></div>
+  <body class="body">
+    <!-- top nav bar -->
+    <div class="top-bar-style top-bar-fixed-position">
+      <div class="container">
+        <div class="row">
+          <div class="col custom-mq-archive">
+            <div class="top-bar">
+              <a href="../../index.html">RPP</a>
+              <nav class="nav">
+                <ul class="items">
+                  <li><a href="../../index.html">About</a></li>
+                  <li><a href="../en/projects.html">Projects</a></li>
+                  <li class="language">
+                    <ul>
+                      <li><a href="#">EN</a></li>
+                      <li class="selected"><span>/</span></li>
+                      <li class="selected">PT</li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="menu-btn">
+                <div class="menu-btn-burger"></div>
+              </div>
+            </div>
           </div>
-          <ul class="nav__menu">
-            <li><a href="../../index.html">
-                case studies
-              </a></li>
-            <li><a href="about.html">
-                about
-              </a></li>
-            <li><a href="travel.html">
-                EN
-              </a></li>
-            <li><a href="#">
-                PT
-              </a></li>
-          </ul>
-        </nav>
+        </div>
       </div>
     </div>
-  </div>
-  <main class="main-travel">
-    <!-- 'travel guide app' case study content -->
-    <article class="travel">
-      <!-- color wrap number one -->
-      <div class="travel-bg-wrap-1">
-        <!-- presentation -->
-        <div class="travel__presentation">
-          <div>
-            <h1>Travel Guide App</h1>
-            <h2>Guiding anyone through new places in a very simple way.</h2>
-          </div>
-          <div>
-            <img src="../../images/travel/mockup-prototype-presentation.png" alt="prototype mockup">
-          </div>
-        </div>
-        <!-- ux research -->
-        <div class="travel__research">
-          <div>
-            <div class="travel__research-problems">
-              <h3>Challenges</h3>
-              <p>- Unfamiliar location</p>
-              <p>- Find suitable options</p>
-              <p>- Great amount of information</p>
-            </div>
-            <div class="travel__research-goals">
-              <h3>Goals</h3>
-              <p>- Act as a guide</p>
-              <p>- Personalized suggestions</p>
-              <p>- Very simple to use</p>
-            </div>
-          </div>
-        </div>
-        <!-- end color wrap number one -->
-      </div>
-      <!-- check more button -->
-      <button class="check-more-btn travel">Check My Full Process</button>
-      <!-- check more btn hidden info -->
-      <div class="check-more">
+
+    <main class="main-travel">
+      <!-- 'travel guide app' case study content -->
+      <article class="travel">
         <!-- color wrap number one -->
         <div class="travel-bg-wrap-1">
-          <!-- persona -->
-          <div class="travel__persona post-scroll">
+          <!-- presentation -->
+          <div class="travel__presentation">
             <div>
-              <h2>personas</h2>
-              <p>The two personas presented here represent the main division within the app. They are the basis for the
-                suggestions that are going to be made.</p>
+              <h1>Travel Guide App</h1>
+              <h2>Guiding anyone through new places in a very simple way.</h2>
             </div>
-            <div class="travel__persona-card-wrap">
-              <div class="travel__persona-card">
-                <div class="travel__persona-personal">
-                  <div>
-                    <img src="../../images/travel/persona-male.svg" alt="Ricky's photo">
-                  </div>
-                  <div>
-                    <p><span>Name: </span>Ricky</p>
-                    <p><span>Age: </span>27 years old</p>
-                    <p><span>Profession: </span>Developer</p>
-                  </div>
-                </div>
-                <div class="travel__persona-description">
-                  <div>
-                    <h3>“I want to immerse in the local life”</h3>
-                  </div>
-                  <div>
-                    <h4>Description</h4>
-                    <p>Ricky likes to choose travel destinations spontaneously.</p>
-                    <p>One of his premises is traveling on a low budget because he is a minimalist.</p>
-                    <p>Besides that, being a solo traveler with a flexible schedule allows him to socialize with the
-                      locals.</p>
-                    <p>He is also pretty active and always looking for some adventures.</p>
-                  </div>
-                  <div>
-                    <h4>Needs</h4>
-                    <p>- Walking tour and meetings</p>
-                    <p>- Parks around the city</p>
-                    <p>- Nightlife bars and clubs</p>
-                  </div>
-                </div>
-              </div>
-              <div class="travel__persona-card">
-                <div class="travel__persona-personal">
-                  <div>
-                    <img src="../../images/travel/persona-female.svg" alt="Emma's photo">
-                  </div>
-                  <div>
-                    <p><span>Name: </span>Emma</p>
-                    <p><span>Age: </span>46 years old</p>
-                    <p><span>Profession: </span>Doctor</p>
-                  </div>
-                </div>
-                <div class="travel__persona-description">
-                  <div>
-                    <h3>“I want to see the local life”</h3>
-                  </div>
-                  <div>
-                    <h4>Description</h4>
-                    <p>Emma enjoys traveling but doesn’t like to make very detailed plans.</p>
-                    <p>As she travels with her family and everyone has different tastes, there is the need to have
-                      several options to please them all.</p>
-                    <p>The schedule is often tight, but the capacity to afford anything needed or wanted makes it worth
-                      it.</p>
-                    <p>She always expects the trips to serve an educational purpose.</p>
-                  </div>
-                  <div>
-                    <h4>Needs</h4>
-                    <p>- Search for historical sites</p>
-                    <p>- Best places in downtown</p>
-                    <p>- Different viewpoints</p>
-                  </div>
-                </div>
-              </div>
+            <div>
+              <img src="../../images/travel/mockup-prototype-presentation.png" alt="prototype mockup" />
             </div>
           </div>
-          <!-- travel journey -->
-          <div class="travel__journey">
-            <h2>User journey map</h2>
-            <div class="travel__journey-wrap">
-              <div class="travel__journey-description">
-                <div>
-                  <img src="../../images/travel/persona-male.svg" alt="Ricky's photo">
-                </div>
-                <div>
-                  <h3>Ricky Traveler</h3>
-                  <p><span>Scenario: </span>Ricky is a traveler that doesn’t know what the city has to offer.</p>
-                  <p>He needs some guidance in order to accomplish his needs.</p>
-                </div>
-                <div>
-                  <h3>Expectations</h3>
-                  <p>- Suggestions on different topics</p>
-                  <p>- Ability to chose specifically </p>
-                  <p>- Easy and quick process</p>
-                </div>
+          <!-- ux research -->
+          <div class="travel__research">
+            <div>
+              <div class="travel__research-problems">
+                <h3>Challenges</h3>
+                <p>- Unfamiliar location</p>
+                <p>- Find suitable options</p>
+                <p>- Great amount of information</p>
               </div>
-              <div class="travel__journey-phase">
-                <div>
-                  <h4>aware</h4>
-                  <p><span>1. </span>He has no idea about what he can do in the city</p>
-                  <p><span>2. </span>Checks his app to have some help and guidance</p>
-                </div>
-                <div>
-                  <h4>explore</h4>
-                  <p><span>3. </span>Starts to click on relatable options that show up</p>
-                  <p><span>4. </span>During the process are revealed related topics</p>
-                </div>
-                <div>
-                  <h4>consider</h4>
-                  <p><span>5. </span>Gets an overview of his choices</p>
-                  <p><span>6. </span>There is the option of changing them</p>
-                </div>
-                <div>
-                  <h4>select</h4>
-                  <p><span>7. </span>Decides to accept the suggestions made</p>
-                </div>
-              </div>
-              <div>
-                <img src="../../images/travel/user-journey-map-graphic.png" alt="user journey map emotions graphic">
+              <div class="travel__research-goals">
+                <h3>Goals</h3>
+                <p>- Act as a guide</p>
+                <p>- Personalized suggestions</p>
+                <p>- Very simple to use</p>
               </div>
             </div>
           </div>
           <!-- end color wrap number one -->
         </div>
-        <!-- color wrap number two -->
-        <div class="travel-bg-wrap-2">
-          <!-- information architecture -->
-          <div class="travel__ia">
-            <div>
-              <h2>Information Architecture</h2>
-              <p>The connection between the different options is very simple. It's done linearly, as each new suggestion
-                is based on the choices made previously. However, it is possible to go back and make any desirable
-                change.</p>
+        <!-- check more button -->
+        <button class="check-more-btn travel">Check My Full Process</button>
+        <!-- check more btn hidden info -->
+        <div class="check-more">
+          <!-- color wrap number one -->
+          <div class="travel-bg-wrap-1">
+            <!-- persona -->
+            <div class="travel__persona post-scroll">
+              <div>
+                <h2>personas</h2>
+                <p>
+                  The two personas presented here represent the main division within the app. They are the basis for the suggestions that are going to be made.
+                </p>
+              </div>
+              <div class="travel__persona-card-wrap">
+                <div class="travel__persona-card">
+                  <div class="travel__persona-personal">
+                    <div>
+                      <img src="../../images/travel/persona-male.svg" alt="Ricky's photo" />
+                    </div>
+                    <div>
+                      <p><span>Name: </span>Ricky</p>
+                      <p><span>Age: </span>27 years old</p>
+                      <p><span>Profession: </span>Developer</p>
+                    </div>
+                  </div>
+                  <div class="travel__persona-description">
+                    <div>
+                      <h3>“I want to immerse in the local life”</h3>
+                    </div>
+                    <div>
+                      <h4>Description</h4>
+                      <p>Ricky likes to choose travel destinations spontaneously.</p>
+                      <p>One of his premises is traveling on a low budget because he is a minimalist.</p>
+                      <p>Besides that, being a solo traveler with a flexible schedule allows him to socialize with the locals.</p>
+                      <p>He is also pretty active and always looking for some adventures.</p>
+                    </div>
+                    <div>
+                      <h4>Needs</h4>
+                      <p>- Walking tour and meetings</p>
+                      <p>- Parks around the city</p>
+                      <p>- Nightlife bars and clubs</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="travel__persona-card">
+                  <div class="travel__persona-personal">
+                    <div>
+                      <img src="../../images/travel/persona-female.svg" alt="Emma's photo" />
+                    </div>
+                    <div>
+                      <p><span>Name: </span>Emma</p>
+                      <p><span>Age: </span>46 years old</p>
+                      <p><span>Profession: </span>Doctor</p>
+                    </div>
+                  </div>
+                  <div class="travel__persona-description">
+                    <div>
+                      <h3>“I want to see the local life”</h3>
+                    </div>
+                    <div>
+                      <h4>Description</h4>
+                      <p>Emma enjoys traveling but doesn’t like to make very detailed plans.</p>
+                      <p>As she travels with her family and everyone has different tastes, there is the need to have several options to please them all.</p>
+                      <p>The schedule is often tight, but the capacity to afford anything needed or wanted makes it worth it.</p>
+                      <p>She always expects the trips to serve an educational purpose.</p>
+                    </div>
+                    <div>
+                      <h4>Needs</h4>
+                      <p>- Search for historical sites</p>
+                      <p>- Best places in downtown</p>
+                      <p>- Different viewpoints</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>sitemap & user flow</h3>
-              <p>Everything was designed keeping in mind the possibility of expansion in the future. Choosing between
-                backpacker or traveler is going to influence all the information shown next.</p>
-              <img src="../../images/travel/user-flow.png" alt="user flow">
-              <p>The several options are condensed into 'categories', 'interests', 'places', and the same colors
-                represent proximity between them. </p>
-              <img src="../../images/travel/categories.png" alt="all site categories">
+            <!-- travel journey -->
+            <div class="travel__journey">
+              <h2>User journey map</h2>
+              <div class="travel__journey-wrap">
+                <div class="travel__journey-description">
+                  <div>
+                    <img src="../../images/travel/persona-male.svg" alt="Ricky's photo" />
+                  </div>
+                  <div>
+                    <h3>Ricky Traveler</h3>
+                    <p><span>Scenario: </span>Ricky is a traveler that doesn’t know what the city has to offer.</p>
+                    <p>He needs some guidance in order to accomplish his needs.</p>
+                  </div>
+                  <div>
+                    <h3>Expectations</h3>
+                    <p>- Suggestions on different topics</p>
+                    <p>- Ability to chose specifically</p>
+                    <p>- Easy and quick process</p>
+                  </div>
+                </div>
+                <div class="travel__journey-phase">
+                  <div>
+                    <h4>aware</h4>
+                    <p><span>1. </span>He has no idea about what he can do in the city</p>
+                    <p><span>2. </span>Checks his app to have some help and guidance</p>
+                  </div>
+                  <div>
+                    <h4>explore</h4>
+                    <p><span>3. </span>Starts to click on relatable options that show up</p>
+                    <p><span>4. </span>During the process are revealed related topics</p>
+                  </div>
+                  <div>
+                    <h4>consider</h4>
+                    <p><span>5. </span>Gets an overview of his choices</p>
+                    <p><span>6. </span>There is the option of changing them</p>
+                  </div>
+                  <div>
+                    <h4>select</h4>
+                    <p><span>7. </span>Decides to accept the suggestions made</p>
+                  </div>
+                </div>
+                <div>
+                  <img src="../../images/travel/user-journey-map-graphic.png" alt="user journey map emotions graphic" />
+                </div>
+              </div>
             </div>
+            <!-- end color wrap number one -->
           </div>
-          <!-- wireframe draws -->
-          <div class="travel__wireframes">
+          <!-- color wrap number two -->
+          <div class="travel-bg-wrap-2">
+            <!-- information architecture -->
+            <div class="travel__ia">
+              <div>
+                <h2>Information Architecture</h2>
+                <p>
+                  The connection between the different options is very simple. It's done linearly, as each new suggestion is based on the choices made
+                  previously. However, it is possible to go back and make any desirable change.
+                </p>
+              </div>
+              <div>
+                <h3>sitemap & user flow</h3>
+                <p>
+                  Everything was designed keeping in mind the possibility of expansion in the future. Choosing between backpacker or traveler is going to
+                  influence all the information shown next.
+                </p>
+                <img src="../../images/travel/user-flow.png" alt="user flow" />
+                <p>The several options are condensed into 'categories', 'interests', 'places', and the same colors represent proximity between them.</p>
+                <img src="../../images/travel/categories.png" alt="all site categories" />
+              </div>
+            </div>
+            <!-- wireframe draws -->
+            <div class="travel__wireframes">
+              <div>
+                <h2>Wireframes</h2>
+                <p>
+                  A mix between sketching and more rigorous wireframing helps to achieve results in a fast and better way. The sketches, which give a lot of
+                  freedom and speed, are then adjusted in the digital space.
+                </p>
+              </div>
+              <div class="travel__wireframes-wf">
+                <img src="../../images/travel/wireframe-sketches.png" alt="wireframe sketches example" />
+                <img src="../../images/travel/wireframes.png" alt="computed wireframes" />
+              </div>
+            </div>
+            <!-- visual design -->
+            <div class="travel__visualdesign">
+              <div>
+                <h2>Visual Design</h2>
+                <p>
+                  The choice of these colors is related to the planet Earth. Seen from space, the colors that stand out are precisely blue, green, and yellow.
+                </p>
+              </div>
+              <div>
+                <img src="../../images/travel/visual-design.png" alt="colors and typography used" />
+              </div>
+            </div>
+            <!-- end color wrap number two -->
+          </div>
+          <!-- color wrap number one -->
+          <div class="travel-bg-wrap-1">
+            <!-- prototypes -->
+            <div class="travel__prototype">
+              <h2>Prototypes</h2>
+              <div class="travel__prototype-section">
+                <div>
+                  <p>First, we choose the personality type that most closely matches us.</p>
+                  <img src="../../images/travel/choose-your-style.png" alt="prototype example" />
+                </div>
+                <div>
+                  <p>Then location is indicated by the GPS but can also be changed.</p>
+                  <img src="../../images/travel/choose-your-location.png" alt="prototype example" />
+                </div>
+              </div>
+              <div class="travel__prototype-section">
+                <div>
+                  <p>After that, it is time to choose the prefered category.</p>
+                  <img src="../../images/travel/choose-a-category.png" alt="prototype example" />
+                </div>
+                <div>
+                  <p>We can be specific or ask for a random choice.</p>
+                  <img src="../../images/travel/gif-prototype-category-interest.gif" alt="prototype example" class="travel-gif" />
+                </div>
+              </div>
+              <div class="travel__prototype-section">
+                <div>
+                  <p>Lastly, we choose our favorite option.</p>
+                  <img src="../../images/travel/choose-an-option.png" alt="prototype example" />
+                </div>
+                <div>
+                  <p>And select on the map what we want. That's it!</p>
+                  <img src="../../images/travel/choose-an-option-info.png" alt="prototype example" />
+                </div>
+              </div>
+            </div>
+            <!-- end color wrap number one -->
+          </div>
+          <!-- what I learned -->
+          <div class="travel__learned">
+            <h2>What I learned</h2>
             <div>
-              <h2>Wireframes</h2>
-              <p>A mix between sketching and more rigorous wireframing helps to achieve results in a fast and better
-                way. The sketches, which give a lot of freedom and speed, are then adjusted in the digital space.</p>
-            </div>
-            <div class="travel__wireframes-wf">
-              <img src="../../images/travel/wireframe-sketches.png" alt="wireframe sketches example">
-              <img src="../../images/travel/wireframes.png" alt="computed wireframes">
-            </div>
-          </div>
-          <!-- visual design -->
-          <div class="travel__visualdesign">
-            <div>
-              <h2>Visual Design</h2>
-              <p>The choice of these colors is related to the planet Earth. Seen from space, the colors that stand out
-                are precisely blue, green, and yellow.</p>
-            </div>
-            <div>
-              <img src="../../images/travel/visual-design.png" alt="colors and typography used">
-            </div>
-          </div>
-          <!-- end color wrap number two -->
-        </div>
-        <!-- color wrap number one -->
-        <div class="travel-bg-wrap-1">
-          <!-- prototypes -->
-          <div class="travel__prototype">
-            <h2>Prototypes</h2>
-            <div class="travel__prototype-section">
-              <div>
-                <p>First, we choose the personality type that most closely matches us.</p>
-                <img src="../../images/travel/choose-your-style.png" alt="prototype example">
-              </div>
-              <div>
-                <p>Then location is indicated by the GPS but can also be changed.</p>
-                <img src="../../images/travel/choose-your-location.png" alt="prototype example">
-              </div>
-            </div>
-            <div class="travel__prototype-section">
-              <div>
-                <p>After that, it is time to choose the prefered category.</p>
-                <img src="../../images/travel/choose-a-category.png" alt="prototype example">
-              </div>
-              <div>
-                <p>We can be specific or ask for a random choice.</p>
-                <img src="../../images/travel/gif-prototype-category-interest.gif" alt="prototype example"
-                  class="travel-gif">
-              </div>
-            </div>
-            <div class="travel__prototype-section">
-              <div>
-                <p>Lastly, we choose our favorite option.</p>
-                <img src="../../images/travel/choose-an-option.png" alt="prototype example">
-              </div>
-              <div>
-                <p>And select on the map what we want. That's it!</p>
-                <img src="../../images/travel/choose-an-option-info.png" alt="prototype example">
-              </div>
-            </div>
-          </div>
-          <!-- end color wrap number one -->
-        </div>
-        <!-- what I learned -->
-        <div class="travel__learned">
-          <h2>What I learned</h2>
-          <div>
-            <p>- Choosing the colors that look and feel right can take time and can transform the UI a lot. During the
-              process, I learned more about color correction and solidified my color theory knowledge.</p>
-            <p>- Illustrations are great besides being trendy. I had started with photos but then changed to
-              illustrations because I felt it was less specific but just right enough to transmit the message needed.
-            </p>
-            <p>- It would be great to do more user testings. Until now, I have just done it with friends of mine, but I
-              feel it is not enough. Doing so would add value, I believe.</p>
-          </div>
-        </div>
-        <!-- end check more btn hidden info -->
-      </div>
-      <!-- end of 'travel guide app' case study content -->
-    </article>
-    <!-- see more projects -->
-    <div class="next-project case-study">
-      <!-- 'architecture e-room' case study -->
-      <div class="next-project__holder">
-        <a href="e-room.html">
-          <img src="../../images/showcase-a-eroom.png" alt="case study preview image">
-        </a>
-        <div class="next-project__content">
-          <h3>Architecture E-Room</h3>
-          <p>A safe environment that allows groups of students to work and study.</p>
-        </div>
-      </div>
-      <!-- 'fitness trainer app' case study -->
-      <div class="next-project__holder">
-        <a href="fitness.html">
-          <img src="../../images/showcase-fitness.jpg" alt="case study preview image">
-        </a>
-        <div class="next-project__content">
-          <h3>Fitness Trainer App</h3>
-          <p>Helping young people to exercise with workout plans that can be performed anywhere.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- bottom footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="footer__container">
-            <div class="footer__links">
-              <!-- my contact email -->
-              <a href="mailto:rpp@ruippeixe.com" rel="noopener noreferrer nofollow" target="_blank">
-                <button>
-                  Contact Me
-                </button>
-              </a>
-              <!-- my linkedin page -->
-              <a href="https://www.linkedin.com/in/ruippeixe/" target="_blank">
-                <img src="../../images/linkedin-logo.svg" alt="my linkedin page">
-              </a>
-              <!-- my github profile -->
-              <a href="https://github.com/ruippeixe" target="_blank">
-                <img src="../../images/github-logo.svg" alt="my github page">
-              </a>
-            </div>
-            <div class="footer__copyright">
-              <p>&copy;
-                <script>document.write(new Date().getFullYear())</script>
-                Rui Peixe
+              <p>
+                - Choosing the colors that look and feel right can take time and can transform the UI a lot. During the process, I learned more about color
+                correction and solidified my color theory knowledge.
+              </p>
+              <p>
+                - Illustrations are great besides being trendy. I had started with photos but then changed to illustrations because I felt it was less specific
+                but just right enough to transmit the message needed.
+              </p>
+              <p>
+                - It would be great to do more user testings. Until now, I have just done it with friends of mine, but I feel it is not enough. Doing so would
+                add value, I believe.
               </p>
             </div>
           </div>
+          <!-- end check more btn hidden info -->
+        </div>
+        <!-- end of 'travel guide app' case study content -->
+      </article>
+      <!-- see more projects -->
+      <div class="next-project case-study">
+        <!-- 'architecture e-room' case study -->
+        <div class="next-project__holder">
+          <a href="e-room.html">
+            <img src="../../images/showcase-a-eroom.png" alt="case study preview image" />
+          </a>
+          <div class="next-project__content">
+            <h3>Architecture E-Room</h3>
+            <p>A safe environment that allows groups of students to work and study.</p>
+          </div>
+        </div>
+        <!-- 'fitness trainer app' case study -->
+        <div class="next-project__holder">
+          <a href="fitness.html">
+            <img src="../../images/showcase-fitness.jpg" alt="case study preview image" />
+          </a>
+          <div class="next-project__content">
+            <h3>Fitness Trainer App</h3>
+            <p>Helping young people to exercise with workout plans that can be performed anywhere.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+      <div class="container">
+        <div class="row">
+          <div class="col custom-mq-archive">
+            <div class="go-back-to-projects">
+              <a href="../en/projects.html">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.02703 6L8 10.6L6.48649 12L5.24537e-07 6L6.48649 -1.32316e-07L8 1.4L3.02703 6Z" fill="black" />
+                </svg>
+                <span>Go back to project list</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- bottom footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col custom-mq-archive">
+            <div class="email">
+              <p class="label">Get in touch</p>
+              <p class="address">rpp@ruippeixe.com</p>
+            </div>
+            <div class="my-socials">
+              <a href="https://www.linkedin.com/in/ruippeixe/" target="_blank">
+                <img src="../../images/linkedin-logo-white.svg" alt="linkedin profile" />
+              </a>
+              <a href="https://github.com/ruippeixe" target="_blank">
+                <img src="../../images/github-logo-white.svg" alt="github profile" />
+              </a>
+              <div class="copyright">
+                <p>
+                  &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Rui Peixe
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

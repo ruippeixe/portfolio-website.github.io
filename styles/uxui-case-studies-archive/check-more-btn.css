@@ -1,0 +1,35 @@
+.check-more {
+  display: none;
+}
+
+.check-more.show {
+  display: inherit;
+}
+
+.check-more-btn {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 120px auto;
+  padding: 40px 160px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  border-style: none;
+}
+
+.check-more-btn.hide {
+  display: none;
+}
+
+.post-scroll {
+  scroll-margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .check-more-btn {
+    font-size: 1.25rem;
+    margin: 100px auto;
+    padding: 40px 70px;
+  }
+}

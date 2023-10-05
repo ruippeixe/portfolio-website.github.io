@@ -1,19 +1,22 @@
-#### My Portfolio Website
+# Personal Portfolio
+## Overview
 
----
+Welcome to my personal portfolio, where I showcase a selection of projects I've developed throughout my journey.
 
-I'm a UX/UI Designer that also writes code.
+I have handled both the design and code for this portfolio, which is currently in its third version. The first version was created without the use of pre-processors or frameworks, while the subsequent versions incorporated these technologies. As a result of these iterations, there are some design differences between them.
 
-**The purpose of this portfolio is to be able to present my work, and also show how I write code.**
+Furthermore, the portfolio is fully responsive in all its versions.
 
-Currently, there is a mixture of **2 versions**.
+**Find it live at** [ruippeixe.com](https://ruippeixe.com/).
 
-+ The *home page*, *projects*, and the *about me* section, use the new solution. It has a different approach relative to the HTML structure, was built with SASS, and also makes use of the bootstrap grid.
+## Technologies
 
-+ The *case studies* pages I have in the *archive* section use the old solution. It has a slightly different structure, without any pre-processor or framework.
+- HTML
+- CSS/SASS
+- Bootstrap _(only the grid)_
+- JavaScript
 
-The entire website is **responsive** and the technologies used are **HTML, CSS/SASS, JavaScript, and Bootstrap**.
+## Contact
+For any inquiries or feedback regarding this project, please contact [rpp@ruippeixe.com](mailto:rpp@ruippeixe.com).
 
----
-
-**Find it live at [@ruippeixe](https://ruippeixe.com/) - feel free to contact me!**
+Thank you for your interest!

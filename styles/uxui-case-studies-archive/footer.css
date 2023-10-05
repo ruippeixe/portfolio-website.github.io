@@ -1,0 +1,54 @@
+footer {
+  position: relative;
+  background: rgb(27, 27, 27);
+}
+@media (max-width: 991px) {
+  footer.footer-homepage {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  footer.footer-homepage {
+    display: none;
+  }
+}
+footer .email::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10000px;
+  background-color: #404040;
+  bottom: 68px;
+  right: 0;
+}
+footer .email .label {
+  font-family: "Roboto Mono", monospace;
+  padding-top: 24px;
+  margin-bottom: 8px;
+  color: #808080;
+}
+footer .email .address {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  padding-bottom: 16px;
+  color: #ffffff;
+}
+footer .my-socials {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+footer .my-socials a {
+  margin-right: 12px;
+}
+footer .my-socials a img {
+  max-width: 32px;
+}
+footer .copyright {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 0;
+  color: #808080;
+  margin-top: 0;
+  margin-left: auto;
+}

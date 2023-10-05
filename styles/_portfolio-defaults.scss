@@ -1,0 +1,20 @@
+body {
+  &.portfolio-defaults {
+    font-family: "Roboto", sans-serif;
+    color: $black-color;
+    background: rgb(27, 27, 27);
+    background: linear-gradient(180deg, rgba(27, 27, 27, 1) 0%, rgba(37, 37, 37, 1) 100%);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+    }
+  }
+}

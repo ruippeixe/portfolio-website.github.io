@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+li {
+  list-style-type: none;
+}
+
+.go-back-to-projects {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.go-back-to-projects span {
+  margin-left: 4px;
+  text-decoration: underline;
+}

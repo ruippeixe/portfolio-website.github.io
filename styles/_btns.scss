@@ -1,0 +1,55 @@
+.btn {
+  border: 1px solid $white-color;
+  display: inline-flex;
+  justify-content: center;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: $white-color;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out, border-color 150ms ease-in-out;
+
+  &:hover {
+    border-color: $green-color;
+    color: $green-color;
+  }
+
+  &.bg-effect {
+    &:hover {
+      background-color: $white-color;
+      border-color: $white-color;
+      color: $black-color;
+    }
+  }
+
+  &.inverse {
+    font-weight: 700;
+    background-color: $white-color;
+    border-color: $white-color;
+    color: $black-color;
+
+    &.bg-effect {
+      &:hover {
+        background-color: transparent;
+        border-color: $green-color;
+        color: $green-color;
+      }
+    }
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.btn-project {
+    font-size: 0.875rem;
+    margin-top: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    @media (max-width: 576px) {
+      margin-top: 16px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}

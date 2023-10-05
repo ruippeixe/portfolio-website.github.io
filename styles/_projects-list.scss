@@ -1,0 +1,220 @@
+.projects-list-page {
+  .go-back {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    a {
+      font-family: $mono-font;
+      color: $white-color;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .projects-list-grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 5fr 3fr;
+    column-gap: 16px;
+    color: $white-color;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, auto);
+    }
+
+    &.label {
+      font-family: $mono-font;
+      font-size: 1.125rem;
+      font-weight: bold;
+      border-bottom: 1px solid $dark-gray-color;
+      padding-bottom: 16px;
+
+      .item-2,
+      .item-3 {
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+
+      .links {
+        color: $green-color;
+      }
+    }
+
+    &.list-item {
+      border-bottom: 1px solid $dark-gray-color;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      @media (max-width: 991px) {
+        &.active {
+          .item-1 {
+            .title {
+              color: $green-color;
+              img {
+                rotate: 180deg;
+              }
+            }
+          }
+
+          .item-2 {
+            display: block;
+          }
+          .item-3 {
+            display: block;
+          }
+        }
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+      }
+
+      .item-1 {
+        @media (max-width: 991px) {
+          cursor: pointer;
+          grid-column: 1 / 2;
+        }
+
+        .title {
+          img {
+            @media (min-width: 992px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .item-2 {
+        @media (max-width: 991px) {
+          display: none;
+          grid-column: 1 / 3;
+        }
+
+        .role {
+          max-width: 160px;
+
+          @media (max-width: 991px) {
+            display: flex;
+            max-width: none;
+            margin-top: 16px;
+          }
+
+          .label {
+            margin-right: 4px;
+            min-width: 64px;
+
+            @media (min-width: 992px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .item-3 {
+        @media (max-width: 991px) {
+          display: none;
+          grid-column: 1 / 3;
+        }
+
+        .skillset {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 8px;
+
+          > div {
+            font-size: 0.75rem;
+            padding: 10px 6px;
+            border-radius: 24px;
+            margin-right: 8px;
+            margin-bottom: 4px;
+            background-color: $black-color;
+            color: $white-color;
+            line-height: 0;
+          }
+        }
+      }
+
+      .item-4 {
+        justify-content: end;
+
+        @media (max-width: 991px) {
+          grid-column: 2 / 3;
+          grid-row: 1 / 1;
+        }
+
+        .btn {
+          width: 50%;
+          padding-left: 0;
+          padding-right: 0;
+          margin-right: 16px;
+
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &.github {
+            img {
+              display: none;
+            }
+
+            @media (max-width: 767px) {
+              border: none;
+              width: 20%;
+
+              .text {
+                display: none;
+              }
+
+              img {
+                display: block;
+                max-width: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ux-ui-case-studies {
+    margin-bottom: 72px;
+
+    &.active {
+      .ux-ui-case-studies-btn {
+        img {
+          rotate: 180deg;
+        }
+      }
+
+      .ux-ui-case-studies-list {
+        display: block;
+        margin-bottom: 72px;
+      }
+    }
+
+    .ux-ui-case-studies-btn {
+      display: inline-flex;
+      margin-top: 24px;
+      font-family: $mono-font;
+      color: $white-color;
+      cursor: pointer;
+
+      span {
+        text-decoration: underline;
+        margin-right: 8px;
+      }
+    }
+
+    .ux-ui-case-studies-list {
+      display: none;
+    }
+  }
+}

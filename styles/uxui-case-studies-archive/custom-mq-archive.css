@@ -1,0 +1,23 @@
+.custom-mq-archive {
+  max-width: 1200px;
+  margin: auto;
+}
+.custom-mq-archive li {
+  list-style-type: none;
+}
+
+@media (max-width: 1366px) {
+  .custom-mq-archive {
+    max-width: 960px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-mq-archive {
+    max-width: 655px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
