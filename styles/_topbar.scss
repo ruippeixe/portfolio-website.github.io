@@ -67,6 +67,11 @@
     &.selected {
       color: $light-gray-color;
     }
+
+    &.not-available {
+      color: $light-gray-color;
+      text-decoration: line-through;
+    }
   }
 
   nav {

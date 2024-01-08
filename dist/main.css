@@ -511,6 +511,11 @@ body.portfolio-defaults h6 {
 .top-bar li.selected {
   color: #808080;
 }
+.top-bar a.not-available,
+.top-bar li.not-available {
+  color: #808080;
+  text-decoration: line-through;
+}
 .top-bar nav {
   margin-left: auto;
 }
